@@ -10,6 +10,9 @@
   /* Gradients */
   --light-green--o-08: rgba(126, 213, 111, 0.8);
   --dark-green--o-08: rgba(40, 180, 133, 0.8);
+
+  /* Default */
+  --white: #fff;
 }
 
 *,
@@ -30,6 +33,7 @@ body {
 }
 
 .header {
+  position: relative;
   height: 95vh;
 
   /* Clip-path property */
@@ -42,4 +46,44 @@ body {
     url("../img/hero.jpg");
   background-position: top;
   background-size: cover;
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo {
+  width: auto;
+  height: 35px;
+}
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title-h1 {
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.title-h1-main,
+.title-h1-sub {
+  display: block;
+}
+
+.title-h1-main {
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+}
+
+.title-h1-sub {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
 }
