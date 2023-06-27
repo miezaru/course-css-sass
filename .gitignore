@@ -1,0 +1,12 @@
+.vscode
+node_modules
+.browserslistrc
+.editorconfig
+.prettierrc.json
+.stylelintignore
+.stylelintrc.json
+gulpfile.js
+npm-fixes.md
+slides-students-C04.pdf
+vscode-setup.md
+yarn.lock
