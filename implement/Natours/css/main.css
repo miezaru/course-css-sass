@@ -1,0 +1,45 @@
+:root {
+  /* Colors */
+  --light-green: #7ed56f;
+  --medium-green: #55c57a;
+  --dark-green: #28b485;
+
+  /* Greys */
+  --main-grey: #777;
+
+  /* Gradients */
+  --light-green--o-08: rgba(126, 213, 111, 0.8);
+  --dark-green--o-08: rgba(40, 180, 133, 0.8);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 30px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--main-grey);
+}
+
+.header {
+  height: 95vh;
+
+  /* Clip-path property */
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  background-image: linear-gradient(
+      to right bottom,
+      var(--light-green--o-08),
+      var(--dark-green--o-08)
+    ),
+    url("../img/hero.jpg");
+  background-position: top;
+  background-size: cover;
+}
