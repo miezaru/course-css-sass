@@ -1,0 +1,47 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-grey-dark;
+}
+
+.title-h1 {
+  margin-bottom: 6rem;
+  color: $color-white;
+  text-transform: uppercase;
+
+  /* Fix for shaky elements */
+  backface-visibility: hidden;
+
+  &--main,
+  &--sub {
+    display: block;
+  }
+
+  &--main {
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+
+    /* Animation properties */
+    animation: moveInLeft 1s ease-out;
+
+    /*
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; */
+
+    /*
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+    animation-play-state: paused;
+    animation-fill-mode: backwards */
+  }
+
+  &--sub {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-out;
+  }
+}
