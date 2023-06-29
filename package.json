@@ -4,7 +4,7 @@
   "description": "Udemy CSS & Sass course",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gulp:watch": "gulp watch"
   },
   "author": "Artem Usatyi",
   "license": "ISC",
@@ -13,22 +13,23 @@
     "autoprefixer": "^10.4.14",
     "browser-sync": "^2.29.3",
     "cssnano": "^6.0.1",
-    "sass": "^1.63.6",
     "gulp": "^4.0.2",
-    "gulp-sass": "^5.1.0",
     "gulp-concat": "^2.6.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-notify": "^4.0.0",
     "gulp-postcss": "^9.0.1",
     "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
     "mqpacker": "^7.0.0",
     "postcss": "^8.4.24",
     "prettier": "^2.8.8",
+    "sass": "^1.63.6",
     "sort-css-media-queries": "^2.2.0",
     "stylelint": "^15.9.0",
     "stylelint-config-recess-order": "^4.2.0",
-    "stylelint-config-standard": "^33.0.0",
+    "stylelint-config-standard-scss": "^9.0.0",
     "stylelint-prettier": "^3.0.0",
     "stylelint-scss": "^5.0.1"
-  }
+  },
+  "dependencies": {}
 }
