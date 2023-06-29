@@ -58,18 +58,18 @@ body {
   background-size: cover;
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
 
-.logo {
+.header__logo {
   width: auto;
   height: 3.5rem;
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -86,12 +86,12 @@ body {
   backface-visibility: hidden;
 }
 
-.title-h1-main,
-.title-h1-sub {
+.title-h1--main,
+.title-h1--sub {
   display: block;
 }
 
-.title-h1-main {
+.title-h1--main {
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
@@ -111,7 +111,7 @@ body {
   animation-fill-mode: backwards */
 }
 
-.title-h1-sub {
+.title-h1--sub {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.75rem;
@@ -189,8 +189,8 @@ body {
   transform: translateY(-1px);
 }
 
-.btn-white:link,
-.btn-white:visited {
+.btn--white:link,
+.btn--white:visited {
   color: var(--main-grey);
   background-color: var(--white);
 }
@@ -208,7 +208,7 @@ body {
   transition: all 0.4s;
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: var(--white);
 }
 
