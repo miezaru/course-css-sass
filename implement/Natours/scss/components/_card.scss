@@ -156,7 +156,7 @@
 
   // Back side styling
   &__cta {
-    @extend %absolute-centering;
+    @include absolute-ctr('both');
 
     width: 90%;
     text-align: center;

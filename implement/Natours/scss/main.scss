@@ -2,7 +2,6 @@
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/functions';
-@import './utils/extends';
 
 // Base
 @import './base/base';
@@ -16,6 +15,7 @@
 @import './components/feature-box';
 @import './components/card';
 @import './components/story';
+@import './components/bg-video';
 
 // Layout
 @import './layout/header';
