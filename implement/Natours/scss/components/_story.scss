@@ -1,0 +1,36 @@
+.story {
+  width: 75%;
+  padding: 6rem 6rem 6rem 9rem;
+  margin: 0 auto;
+  font-size: $default-font-size;
+  background-color: $color-white;
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+  transform: skewX(-12deg);
+
+  /*
+  & > * {
+    transform: skewX(12deg);
+  } */
+
+  &__shape {
+    position: relative;
+    float: left;
+    width: 15rem;
+    height: 15rem;
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+    shape-outside: circle(50% at 50% 50%);
+  }
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__text {
+    transform: skewX(12deg);
+  }
+}
