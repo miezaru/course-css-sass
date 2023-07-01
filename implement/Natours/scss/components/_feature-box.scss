@@ -3,7 +3,7 @@
   font-size: 1.5rem;
   text-align: center;
   background-color: rgba($color-white, 0.8);
-  border-radius: 3px;
+  border-radius: $border-radius-small;
   box-shadow: $box-shadow-main;
   transition: all 0.3s;
 
