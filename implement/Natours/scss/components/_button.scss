@@ -51,6 +51,18 @@
     }
   }
 
+  &--green {
+    &:link,
+    &:visited {
+      color: $color-white;
+      background-color: $color-primary;
+    }
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
   &--animated {
     /*
     animation: name time timing-function delay fill-mode */
