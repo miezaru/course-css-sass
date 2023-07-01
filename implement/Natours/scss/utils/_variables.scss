@@ -1,7 +1,15 @@
-// Colors
+// Color primary
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
+
+// Color secondary
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff6630;
+
+// Color tertiary
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
 
 // Greys
 $color-grey-dark: #777;
@@ -18,3 +26,6 @@ $gutter-horizontal: 6rem;
 
 // Font
 $default-font-size: 1.6rem;
+
+// Box shadow
+$box-shadow-main: 0 1.5rem 4rem rgba($color-black, 0.15);
