@@ -118,6 +118,8 @@
   &__icon {
     @include absolute-ctr('both');
 
+    transition: all 0.2s;
+
     &,
     &::before,
     &::after {
@@ -149,11 +151,18 @@
   &__button:hover &__icon::before,
   &:focus-within &__icon::before {
     top: -1rem;
+    background-color: $color-primary;
   }
 
   &__button:hover &__icon::after,
   &:focus-within &__icon::after {
     top: 1rem;
+    background-color: $color-primary;
+  }
+
+  &__button:hover &__icon,
+  &:focus-within &__icon {
+    background-color: $color-primary;
   }
 
   &__checkbox:checked + &__button &__icon {
@@ -162,19 +171,23 @@
 
   &__checkbox:checked + &__button &__icon::before {
     top: 0;
+    background-color: $color-grey-dark-3;
     transform: rotate(135deg);
   }
 
   &__checkbox:checked + &__button &__icon::after {
     top: 0;
+    background-color: $color-grey-dark-3;
     transform: rotate(-135deg);
   }
 
-  &__checkbox:checked:focus + &__button &__icon::before {
-    transform: rotate(135deg) scale(1.1);
+  &__checkbox:checked:focus + &__button &__icon::before,
+  &__checkbox:checked:hover + &__button &__icon::before {
+    background-color: $color-primary;
   }
 
-  &__checkbox:checked:focus + &__button &__icon::after {
-    transform: rotate(-135deg) scale(1.1);
+  &__checkbox:checked:focus + &__button &__icon::after,
+  &__checkbox:checked:hover + &__button &__icon::after {
+    background-color: $color-primary;
   }
 }
