@@ -1,5 +1,10 @@
 .navigation {
   &__checkbox {
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    width: 7rem;
+    height: 7rem;
     opacity: 0;
   }
 
@@ -10,6 +15,8 @@
     z-index: 2000;
     width: 7rem;
     height: 7rem;
+    text-align: center;
+    cursor: pointer;
     background-color: $color-white;
     border-radius: 50%;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
@@ -94,8 +101,9 @@
     }
   }
 
+  // Functionality
   &__checkbox:checked ~ &__background {
-    transform: scale(150);
+    transform: scale(130);
   }
 
   &__checkbox:checked ~ &__nav {
@@ -103,5 +111,70 @@
     pointer-events: all;
     visibility: visible;
     opacity: 1;
+  }
+
+  // Icon
+
+  &__icon {
+    @include absolute-ctr('both');
+
+    &,
+    &::before,
+    &::after {
+      display: inline-block;
+      width: 3rem;
+      height: 2px;
+      background-color: $color-grey-dark-3;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      left: 0;
+      content: '';
+      transition: all 0.2s;
+    }
+
+    &::before {
+      top: -0.8rem;
+      transform-origin: center;
+    }
+
+    &::after {
+      top: 0.8rem;
+      transform-origin: center;
+    }
+  }
+
+  &__button:hover &__icon::before,
+  &:focus-within &__icon::before {
+    top: -1rem;
+  }
+
+  &__button:hover &__icon::after,
+  &:focus-within &__icon::after {
+    top: 1rem;
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+  &__checkbox:checked:focus + &__button &__icon::before {
+    transform: rotate(135deg) scale(1.1);
+  }
+
+  &__checkbox:checked:focus + &__button &__icon::after {
+    transform: rotate(-135deg) scale(1.1);
   }
 }
