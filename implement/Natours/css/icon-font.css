@@ -9,6 +9,7 @@
     url("fonts/linea-basic-10.woff") format("woff"),
     url("fonts/linea-basic-10.ttf") format("truetype"),
     url("fonts/linea-basic-10.svg#linea-basic-10") format("svg");
+  font-display: swap;
 }
 
 [data-icon]::before {
