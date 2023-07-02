@@ -56,6 +56,14 @@
     transform: rotateY(0);
   }
 
+  &:focus-within &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:focus-within &__side--back {
+    transform: rotateY(0);
+  }
+
   // Front side styling
   &__picture {
     height: 23rem;
