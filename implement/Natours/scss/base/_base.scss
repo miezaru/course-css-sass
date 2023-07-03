@@ -9,12 +9,12 @@
 html {
   font-size: 62.5%; // 1rem = 10px | 10/16 = 62.5%
 
-  @include respond('tab-port') {
-    font-size: 50%; // 1rem = 8px, 8/16 = 50%
-  }
-
   @include respond('tab-land') {
     font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25%
+  }
+
+  @include respond('tab-port') {
+    font-size: 50%; // 1rem = 8px, 8/16 = 50%
   }
 
   @include respond('big-desktop') {
@@ -25,4 +25,8 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem;
+
+  @include respond('tab-port') {
+    padding: 0;
+  }
 }

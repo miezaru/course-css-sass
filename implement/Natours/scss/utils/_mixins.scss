@@ -42,6 +42,12 @@ $breakpoint argument choices
 - tab-port            900/16  = 56.25em
 - tab-land            1200/16 = 75em
 - big-desktop         1800/16 = 112.5em
+
+Order:
+- Base + typography
+- General layout + grid
+- Page layout
+- Components
 */
 
 @mixin respond($breakpoint) {
