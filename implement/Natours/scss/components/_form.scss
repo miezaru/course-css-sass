@@ -22,6 +22,10 @@
     border-radius: $border-radius-tiny;
     transition: all 0.3s;
 
+    @include respond('tab-port') {
+      width: 100%;
+    }
+
     &:focus {
       border-color: $color-primary;
       outline: none;
@@ -56,6 +60,11 @@
   &__radio-group {
     display: inline-block;
     width: 49%;
+
+    @include respond('tab-port') {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
   }
 
   &__radio-input {

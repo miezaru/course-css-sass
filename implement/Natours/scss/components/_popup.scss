@@ -24,11 +24,23 @@
     opacity: 0;
     transition: all 0.4s 0.2s;
     transform: translate(-50%, -50%) scale(0.3);
+
+    @include respond('phone') {
+      width: 90%;
+    }
   }
 
   &__left {
     display: table-cell;
     width: 33.3333%;
+
+    @include respond('tab-land') {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+
+      @include clearfix;
+    }
   }
 
   &__right {
@@ -36,11 +48,40 @@
     width: 66.6666%;
     padding: 3rem 5rem;
     vertical-align: middle;
+
+    @include respond('tab-land') {
+      display: block;
+      width: 100%;
+    }
+
+    @include respond('tab-port') {
+      padding: 2rem 3rem;
+    }
+
+    @include respond('phone') {
+      & > .title-h2 {
+        font-size: 2rem;
+      }
+    }
   }
 
   &__img {
     display: block;
     width: 100%;
+    height: auto;
+
+    &:first-child {
+      transform: scaleY(1.07);
+    }
+
+    @include respond('tab-land') {
+      float: left;
+      width: 50%;
+    }
+
+    @include respond('tab-port') {
+      float: left;
+    }
   }
 
   &__text {
@@ -52,6 +93,10 @@
 
     // Expecting right language of html document
     hyphens: auto;
+
+    @include respond('phone') {
+      column-count: 1;
+    }
   }
 
   &:target {

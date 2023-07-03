@@ -14,6 +14,7 @@
       position: relative;
       float: left;
       width: 33.3333%;
+      outline-offset: 1rem;
       box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
     }
 
@@ -54,10 +55,21 @@
       outline: 1.5rem solid $color-primary;
       box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
       transform: scale(1.05) translateY(-0.5rem);
+
+      @include respond('tab-port') {
+        outline: 0.5rem solid $color-primary;
+        box-shadow: 0 2.5rem 3rem rgba($color-black, 0.2);
+        transform: scale(1.5);
+      }
     }
   }
 
   &:hover &__photo:not(:hover) {
+    z-index: 10;
     transform: scale(0.95);
+
+    @include respond('tab-port') {
+      transform: translateY(2rem);
+    }
   }
 }
