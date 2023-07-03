@@ -7,6 +7,10 @@
   box-shadow: $box-shadow-main;
   transition: all 0.3s;
 
+  @include respond('tab-port') {
+    padding: 2rem;
+  }
+
   &__icon {
     display: inline-block;
     margin-bottom: 0.5rem;
@@ -18,6 +22,10 @@
       $color-primary-dark
     );
     background-clip: text;
+
+    @include respond('tab-port') {
+      margin-bottom: 0;
+    }
   }
 
   &:hover {
