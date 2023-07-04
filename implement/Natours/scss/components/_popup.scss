@@ -11,6 +11,11 @@
   opacity: 0;
   transition: all 0.3s;
 
+  @supports (backdrop-filter: blur(3px)) {
+    backdrop-filter: blur(3px);
+    background-color: rgba($color-black, 0.3);
+  }
+
   &__content {
     @include absolute-ctr('both');
 

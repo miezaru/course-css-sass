@@ -1,9 +1,8 @@
 .header {
   position: relative;
-  height: 95vh;
+  height: 85vh;
 
   /* Clip-path property */
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.8),
@@ -13,8 +12,15 @@
   background-position: top;
   background-size: cover;
 
+  @supports (clip-path: polygon(0 0)) {
+    height: 95vh;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
+
   // Apple retina screen
-  @media (resolution >= 192dpi) and (width >= 37.5em), (width >= 125em) {
+  @media (resolution >= 192dpi) and (width >= 37.5em),
+    (-webkit-min-device-pixel-ratio: 2) and (width >= 37.5em),
+    (width >= 125em) {
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8),
