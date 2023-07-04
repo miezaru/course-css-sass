@@ -19,6 +19,7 @@
   font-variant: normal !important;
   line-height: 1;
   text-transform: none !important;
+  font-display: swap;
   content: attr(data-icon);
   speak: none;
   -webkit-font-smoothing: antialiased;
@@ -36,6 +37,7 @@
   speak: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-display: swap;
 }
 
 .icon-basic-accelerator::before {

@@ -79,7 +79,11 @@
           $color-secondary-light,
           $color-secondary-dark
         ),
-        url('../img/nat-5.jpg');
+        image-set(
+          url('../img/avif/nat-5.avif') type('image/avif'),
+          url('../img/webp/nat-5.webp') type('image/webp'),
+          url('../img/jpg/nat-5.jpg')
+        );
     }
 
     &--2 {
@@ -88,7 +92,11 @@
           $color-primary-light,
           $color-primary-dark
         ),
-        url('../img/nat-6.jpg');
+        image-set(
+          url('../img/avif/nat-6.avif') type('image/avif'),
+          url('../img/webp/nat-6.webp') type('image/webp'),
+          url('../img/jpg/nat-6.jpg')
+        );
     }
 
     &--3 {
@@ -97,7 +105,11 @@
           $color-tertiary-light,
           $color-tertiary-dark
         ),
-        url('../img/nat-7.jpg');
+        image-set(
+          url('../img/avif/nat-7.avif') type('image/avif'),
+          url('../img/webp/nat-7.webp') type('image/webp'),
+          url('../img/jpg/nat-7.jpg')
+        );
     }
   }
 
@@ -185,7 +197,8 @@
     font-weight: 100;
   }
 
-  @include respond('tab-port') {
+  // @include respond('tab-port') {
+  @media only screen and (width <= 56.25em), only screen and (hover: none) {
     height: auto;
     background-color: $color-white;
     border-radius: $border-radius-small;

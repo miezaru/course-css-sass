@@ -1,10 +1,10 @@
 .section-about {
-  padding: 35rem 0;
-  margin-top: -25vh;
+  padding: 25rem 0 35rem;
+  margin-top: -15rem;
   background-color: $color-grey-light-1;
 
   @include respond('tab-port') {
-    padding: 25rem 0;
+    padding: 15rem 0 25rem;
   }
 }
 
@@ -16,7 +16,11 @@
       rgba($color-primary-light, 0.8),
       rgba($color-primary-dark, 0.8)
     ),
-    url('../img/nat-4.jpg');
+    image-set(
+      url('../img/avif/nat-4.avif') type('image/avif'),
+      url('../img/webp/nat-4.webp') type('image/webp'),
+      url('../img/jpg/nat-4.jpg')
+    );
   background-position: top;
   background-size: cover;
   transform: skewY(-7deg);
@@ -31,7 +35,7 @@
 }
 
 .section-tours {
-  padding: 30rem 0 15rem;
+  padding: 25rem 0 15rem;
   margin-top: -15rem;
   background-color: $color-grey-light-1;
 
@@ -69,7 +73,11 @@
       rgba($color-white, 0.9) 50%,
       transparent 50%
     ),
-    url('../img/nat-10.jpg');
+    image-set(
+      url('../img/avif/nat-10.avif') type('image/avif'),
+      url('../img/webp/nat-10.webp') type('image/webp'),
+      url('../img/jpg/nat-10.jpg')
+    );
   background-size: cover; // cover = 100%
   border-radius: $border-radius-small;
   box-shadow: $box-shadow-main;
@@ -81,7 +89,11 @@
         rgba($color-white, 0.9) 55%,
         transparent 55%
       ),
-      url('../img/nat-10.jpg');
+      image-set(
+        url('../img/avif/nat-10.avif') type('image/avif'),
+        url('../img/webp/nat-10.webp') type('image/webp'),
+        url('../img/jpg/nat-10.jpg')
+      );
   }
 
   @include respond('tab-port') {
@@ -90,7 +102,11 @@
         rgba($color-white, 0.9) 0%,
         rgba($color-white, 0.9) 100%
       ),
-      url('../img/nat-10.jpg');
+      image-set(
+        url('../img/avif/nat-10.avif') type('image/avif'),
+        url('../img/webp/nat-10.webp') type('image/webp'),
+        url('../img/jpg/nat-10.jpg')
+      );
   }
 
   &__form {

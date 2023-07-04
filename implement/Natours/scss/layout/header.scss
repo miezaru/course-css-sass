@@ -8,7 +8,14 @@
       rgba($color-primary-light, 0.8),
       rgba($color-primary-dark, 0.8)
     ),
-    url('../img/hero-small.jpg');
+    image-set(
+      url('../img/avif/hero-small.avif') type('image/avif') 1x,
+      url('../img/avif/hero.avif') type('image/avif') 2x,
+      url('../img/webp/hero.webp') type('image/webp') 1x,
+      url('../img/webp/hero-small.webp') type('image/webp') 2x,
+      url('../img/jpg/hero-small.jpg') 1x,
+      url('../img/jpg/hero.jpg') 2x
+    );
   background-position: top;
   background-size: cover;
 
@@ -18,16 +25,20 @@
   }
 
   // Apple retina screen
-  @media (resolution >= 192dpi) and (width >= 37.5em),
-    (-webkit-min-device-pixel-ratio: 2) and (width >= 37.5em),
-    (width >= 125em) {
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)
-      ),
-      url('../img/hero.jpg');
-  }
+  // @media only screen and (resolution >= 192dpi) and (width >= 37.5em),
+  //   only screen and (-webkit-min-device-pixel-ratio: 2) and (width >= 37.5em),
+  //   only screen and (width >= 125em) {
+  //   background-image: linear-gradient(
+  //       to right bottom,
+  //       rgba($color-primary-light, 0.8),
+  //       rgba($color-primary-dark, 0.8)
+  //     ),
+  //     image-set(
+  //       url('../img/avif/hero.avif') type('image/avif'),
+  //       url('../img/jpg/hero.webp') type('image/webp'),
+  //       url('../img/jpg/hero.jpg')
+  //     );
+  // }
 
   @include respond('phone') {
     clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);

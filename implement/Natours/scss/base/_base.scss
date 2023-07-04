@@ -30,3 +30,12 @@ body {
     padding: 0;
   }
 }
+
+img {
+  display: block;
+}
+
+::selection {
+  color: $color-white;
+  background-color: $color-primary;
+}
