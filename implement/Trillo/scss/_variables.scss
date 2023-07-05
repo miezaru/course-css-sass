@@ -12,6 +12,13 @@ $color-grey-dark-1: #333;
 $color-grey-dark-2: #777;
 $color-grey-dark-3: #999;
 
+// Default colors
+$color-black: #000;
+$color-white: #fff;
+
+// Shadow
+$color-black-shadow-rgb: 0, 0, 0;
+
 :root {
   // Primary
   --color-primary: #{$color-primary};
@@ -26,4 +33,11 @@ $color-grey-dark-3: #999;
   --color-grey-dark-1: #{$color-grey-dark-1};
   --color-grey-dark-2: #{$color-grey-dark-2};
   --color-grey-dark-3: #{$color-grey-dark-3};
+
+  // Default colors
+  --color-black: #{$color-black};
+  --color-white: #{$color-white};
+
+  // Shadows
+  --shadow-dark: 0 2rem 6rem rgba(#{$color-black-shadow-rgb}, 0.3);
 }
