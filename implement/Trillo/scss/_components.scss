@@ -1,25 +1,74 @@
 // ---------- Logo
 .logo {
   height: 3.25rem;
+  margin-left: 3rem;
 }
 
 // ---------- Search
 
 .search {
+  display: flex;
+  flex: 0 0 40%;
+  align-items: center;
+  justify-content: center;
+
   &__input {
+    width: 90%;
+    padding: 0.7rem 2rem;
+    margin-right: -3.25rem;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--color-grey-light-2);
+    border: none;
+    border-radius: 111px;
+    transition: all 0.2s;
+
+    &:focus {
+      width: 100%;
+      background-color: var(--color-grey-light-3);
+      outline: none;
+    }
+
+    &::placeholder {
+      font-weight: 100;
+      color: var(--color-grey-light-4);
+    }
   }
 
   &__button {
+    background-color: var(--color-grey-light-2);
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &__input:focus + &__button {
+    background-color: var(--color-grey-light-3);
   }
 
   &__icon {
     width: 2rem;
     height: 2rem;
+    fill: var(--color-grey-dark-3);
+    transition: all 0.2s;
+  }
+
+  &__button:focus > &__icon {
+    fill: var(--color-grey-dark-2);
   }
 }
 
 // ---------- User navigation
 .user-nav {
+  display: flex;
+  align-items: center;
+
   &__icon-box {
   }
 
