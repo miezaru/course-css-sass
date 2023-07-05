@@ -46,13 +46,30 @@ img {
   display: block;
 }
 
+.logo {
+  height: 3.25rem;
+}
+
+.search__icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.user-nav__icon {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.user-nav__user-photo {
+  height: 3.75rem;
+  border-radius: 50%;
+}
 .wrapper {
   max-width: 120rem;
   min-height: 50rem;
   margin: 8rem auto;
   background-color: var(--color-grey-light-2);
-  -webkit-box-shadow: var(--shado-dark);
-          box-shadow: var(--shado-dark);
+  -webkit-box-shadow: var(--shadow-dark);
+          box-shadow: var(--shadow-dark);
 }
 
 .header {

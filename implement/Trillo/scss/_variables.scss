@@ -17,7 +17,7 @@ $color-black: #000;
 $color-white: #fff;
 
 // Shadow
-$color-black-shadow-rgb: 0, 0, 0;
+$shadow-dark: 0 2rem 6rem rgba($color-black, 0.3);
 
 :root {
   // Primary
@@ -39,5 +39,5 @@ $color-black-shadow-rgb: 0, 0, 0;
   --color-white: #{$color-white};
 
   // Shadows
-  --shadow-dark: 0 2rem 6rem rgba(#{$color-black-shadow-rgb}, 0.3);
+  --shadow-dark: #{$shadow-dark};
 }
