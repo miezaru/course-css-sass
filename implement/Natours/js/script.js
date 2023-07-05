@@ -5,7 +5,7 @@ const navLinkEl = document.querySelectorAll('.navigation__link')
 
 checkboxEl.addEventListener('change', function () {
   if (this.checked) {
-    navigationEl.classList.toggle('navigation--open')
+    navigationEl.classList.add('navigation--open')
   } else {
     navigationEl.classList.remove('navigation--open')
   }

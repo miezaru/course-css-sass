@@ -1,0 +1,29 @@
+// Primary
+$color-primary: #eb2f64;
+$color-primary-light: #f36;
+$color-primary-dark: #ba265d;
+
+// Greys
+$color-grey-light-1: #faf9f9;
+$color-grey-light-2: #f4f2f2;
+$color-grey-light-3: #f0eeee;
+$color-grey-light-4: #ccc;
+$color-grey-dark-1: #333;
+$color-grey-dark-2: #777;
+$color-grey-dark-3: #999;
+
+:root {
+  // Primary
+  --color-primary: #{$color-primary};
+  --color-primary-light: #{$color-primary-light};
+  --color-primary-dark: #{$color-primary-dark};
+
+  // Greys
+  --color-grey-light-1: #{$color-grey-light-1};
+  --color-grey-light-2: #{$color-grey-light-2};
+  --color-grey-light-3: #{$color-grey-light-3};
+  --color-grey-light-4: #{$color-grey-light-4};
+  --color-grey-dark-1: #{$color-grey-dark-1};
+  --color-grey-dark-2: #{$color-grey-dark-2};
+  --color-grey-dark-3: #{$color-grey-dark-3};
+}
