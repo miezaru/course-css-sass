@@ -112,7 +112,44 @@
     margin-right: 1rem;
     border-radius: 50%;
   }
+}
 
-  &__user-name {
+// ---------- Side navigation
+.side-nav {
+  &__item {
+  }
+
+  &__link {
+  }
+
+  &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+
+// ---------- Legal
+.legal {
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: var(--color-grey-light-4);
+
+  &__link {
+    &:link,
+    &:visited {
+      font-weight: 600;
+      color: var(--color-grey-light-4);
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-primary;
+    }
+
+    &:focus {
+      outline: none;
+    }
   }
 }

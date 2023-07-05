@@ -202,6 +202,29 @@ img {
   margin-right: 1rem;
   border-radius: 50%;
 }
+
+.side-nav__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.legal {
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: var(--color-grey-light-4);
+}
+.legal__link:link, .legal__link:visited {
+  font-weight: 600;
+  color: var(--color-grey-light-4);
+  text-decoration: none;
+}
+.legal__link:hover, .legal__link:active, .legal__link:focus {
+  color: #eb2f64;
+}
+.legal__link:focus {
+  outline: none;
+}
+
 .wrapper {
   max-width: 120rem;
   min-height: 50rem;
@@ -238,10 +261,23 @@ img {
 }
 
 .sidebar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 18%;
       -ms-flex: 0 0 18%;
           flex: 0 0 18%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: var(--color-grey-dark-1);
 }
 
@@ -250,5 +286,6 @@ img {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  height: 80rem;
   background-color: var(--color-white);
 }
