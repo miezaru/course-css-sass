@@ -22,7 +22,7 @@
     "gulp-sass": "^5.1.0",
     "mqpacker": "^7.0.0",
     "postcss": "^8.4.24",
-    "prettier": "^3.0.0",
+    "prettier": "^2.8.8",
     "sass": "^1.63.6",
     "sort-css-media-queries": "^2.2.0",
     "stylelint": "^15.10.0",
