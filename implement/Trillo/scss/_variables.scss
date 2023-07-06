@@ -18,6 +18,7 @@ $color-white: #fff;
 
 // Shadow
 $shadow-dark: 0 2rem 6rem rgba($color-black, 0.3);
+$shadow-btn: 0 1rem 4rem rgba($color-black, 0.25);
 
 // Border
 $line: 1px solid var(--color-grey-light-1);
@@ -43,6 +44,7 @@ $line: 1px solid var(--color-grey-light-1);
 
   // Shadows
   --shadow-dark: #{$shadow-dark};
+  --shadow-btn: #{$shadow-btn};
 
   // Border
   --line: #{$line};

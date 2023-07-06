@@ -253,11 +253,19 @@
 .overview {
   display: flex;
   align-items: center;
+  border-bottom: var(--line);
 
   &__heading {
+    padding: 1.5rem 3rem;
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 
   &__stars {
+    display: flex;
+    align-items: center;
     margin-right: auto;
   }
 
@@ -269,14 +277,73 @@
   }
 
   &__location {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+
+  &__icon-location {
+    margin-right: 0.5rem;
   }
 
   &__rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    justify-content: center;
+    padding: 0 2.25rem;
+    margin-left: 3rem;
+    color: var(--color-white);
+    background-color: var(--color-primary);
   }
 
   &__rating-average {
+    font-size: 2.25rem;
+    font-weight: 300;
   }
 
   &__rating-count {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+}
+
+// ---------- Button inline
+.btn-inline {
+  display: inline-block;
+  padding-bottom: 2px;
+  font-size: inherit;
+  color: $color-primary;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid currentcolor;
+  transition: all 0.2s;
+
+  &:hover {
+    color: var(--color-grey-dark-1);
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    box-shadow: none;
+    transform: scale(1);
+  }
+
+  50% {
+    box-shadow: var(--shadow-btn);
+    transform: scale(1.05);
+  }
+
+  100% {
+    box-shadow: 0;
+    transform: scale(1);
   }
 }
