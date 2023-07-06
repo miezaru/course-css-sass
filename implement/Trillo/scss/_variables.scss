@@ -19,6 +19,9 @@ $color-white: #fff;
 // Shadow
 $shadow-dark: 0 2rem 6rem rgba($color-black, 0.3);
 
+// Border
+$line: 1px solid var(--color-grey-light-1);
+
 :root {
   // Primary
   --color-primary: #{$color-primary};
@@ -40,4 +43,7 @@ $shadow-dark: 0 2rem 6rem rgba($color-black, 0.3);
 
   // Shadows
   --shadow-dark: #{$shadow-dark};
+
+  // Border
+  --line: #{$line};
 }
