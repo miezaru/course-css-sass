@@ -321,8 +321,17 @@
   border-bottom: 1px solid currentcolor;
   transition: all 0.2s;
 
+  & span {
+    margin-left: 3px;
+    transition: margin-left 0.2s;
+  }
+
   &:hover {
     color: var(--color-grey-dark-1);
+
+    & span {
+      margin-left: 8px;
+    }
   }
 
   &:focus {
@@ -396,9 +405,6 @@
   font-size: 1.3rem;
   color: var(--color-grey-dark-3);
 
-  &__count {
-  }
-
   &__friends {
     display: flex;
   }
@@ -413,5 +419,71 @@
     &:not(:last-child) {
       margin-right: -1.5rem;
     }
+  }
+}
+
+// ---------- Reviews
+.review {
+  position: relative;
+  padding: 3rem;
+  overflow: hidden;
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-light);
+
+  &:not(:last-child) {
+    margin-bottom: 3.5rem;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 3rem;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+  }
+
+  &__photo {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: 1.5rem;
+    border-radius: 50%;
+  }
+
+  &__user-box {
+    margin-right: auto;
+  }
+
+  &__user-name {
+    margin-bottom: 0.4rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__user-date {
+    font-size: 1rem;
+    color: var(--color-grey-dark-3);
+  }
+
+  &__rating {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: var(--color-primary);
+  }
+
+  &::before {
+    position: absolute;
+    top: -2.75rem;
+    left: -1rem;
+    z-index: 1;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 20rem;
+    line-height: 1;
+    color: var(--color-grey-light-2);
+    content: '\201C';
   }
 }
