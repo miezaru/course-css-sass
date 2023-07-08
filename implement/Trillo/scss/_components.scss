@@ -347,3 +347,71 @@
     transform: scale(1);
   }
 }
+
+// ---------- Paragraph
+.paragraph {
+  &:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+}
+
+// ---------- List
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+  margin: 3rem 0;
+  list-style: none;
+  border-top: var(--line);
+  border-bottom: var(--line);
+
+  &__item {
+    flex: 0 0 50%;
+    margin-bottom: 0.7rem;
+
+    &::before {
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      margin-right: 0.7rem;
+      content: '';
+
+      // Older browsers
+      // background-image: url('../img/chevron-thin-right.svg');
+      // background-size: cover;
+
+      // Newer browsers - mask
+      background-color: var(--color-primary);
+      mask-image: url('../img/chevron-thin-right.svg');
+      mask-size: cover;
+    }
+  }
+}
+
+// ---------- Recommend
+.recommend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-3);
+
+  &__count {
+  }
+
+  &__friends {
+    display: flex;
+  }
+
+  &__photo {
+    box-sizing: content-box;
+    width: 4rem;
+    height: 4rem;
+    border: 3px solid var(--color-white);
+    border-radius: 50%;
+
+    &:not(:last-child) {
+      margin-right: -1.5rem;
+    }
+  }
+}
