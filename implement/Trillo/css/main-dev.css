@@ -610,6 +610,61 @@ img {
   content: "“";
 }
 
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+}
+.cta__book-now {
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.btn-cta {
+  position: relative;
+  overflow: hidden;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--color-white);
+  text-transform: uppercase;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--color-primary-light)), to(var(--color-primary-dark)));
+  background-image: -webkit-linear-gradient(left, var(--color-primary-light), var(--color-primary-dark));
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  border: none;
+  border-radius: 111px;
+}
+.btn-cta > * {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.btn-cta__visible {
+  padding: 2rem 7.5rem;
+}
+.btn-cta__invisible {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  padding: 2rem 0;
+}
+.btn-cta:hover .btn-cta__visible {
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+}
+.btn-cta:hover .btn-cta__invisible {
+  top: 0;
+}
+.btn-cta:focus {
+  outline: none;
+  -webkit-animation: pulsate 1s infinite;
+          animation: pulsate 1s infinite;
+}
+
 .wrapper {
   max-width: 120rem;
   min-height: 50rem;
