@@ -21,6 +21,11 @@ $shadow-dark: 0 2rem 6rem rgba($color-black, 0.3);
 $shadow-btn: 0 1rem 4rem rgba($color-black, 0.25);
 $shadow-light: 0 2rem 5rem rgba($color-black, 0.06);
 
+// Breakpoints
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+
 // Border
 $line: 1px solid var(--color-grey-light-1);
 
