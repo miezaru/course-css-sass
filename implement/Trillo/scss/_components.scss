@@ -13,6 +13,16 @@
   align-items: center;
   justify-content: center;
 
+  @media only screen and (width <= $bp-smallest) {
+    flex: 0 0 100%;
+    order: 1;
+    background-color: var(--color-grey-light-2);
+  }
+
+  &:focus-within {
+    background-color: var(--color-grey-light-3);
+  }
+
   &__input {
     width: 90%;
     padding: 0.7rem 2rem;
@@ -24,10 +34,19 @@
     border-radius: 111px;
     transition: all 0.2s;
 
+    @media only screen and (width <= $bp-smallest) {
+      width: 85%;
+      margin-right: -5.25rem;
+    }
+
     &:focus {
       width: 100%;
       background-color: var(--color-grey-light-3);
       outline: none;
+
+      @media only screen and (width <= $bp-smallest) {
+        width: 90%;
+      }
     }
 
     &::placeholder {
@@ -93,6 +112,10 @@
     &:focus {
       outline: none;
       box-shadow: inset 0 0 0 5px var(--color-primary-light);
+
+      @media only screen and (width <= $bp-smallest) {
+        box-shadow: inset 0 0 0 2px var(--color-primary-light);
+      }
     }
   }
 
@@ -127,6 +150,10 @@
     &:focus {
       outline: none;
       box-shadow: inset 0 0 0 5px var(--color-primary-light);
+
+      @media only screen and (width <= $bp-smallest) {
+        box-shadow: inset 0 0 0 2px var(--color-primary-light);
+      }
     }
   }
 
@@ -209,6 +236,11 @@
         justify-content: center;
         padding: 2rem;
       }
+
+      @media only screen and (width <= $bp-small) {
+        flex-direction: column;
+        padding: 1.5rem 0.5rem;
+      }
     }
 
     &:focus {
@@ -221,6 +253,13 @@
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentcolor;
+
+    @media only screen and (width <= $bp-small) {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 0;
+      margin-bottom: 0.7rem;
+    }
   }
 }
 
@@ -283,6 +322,11 @@
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
+
+    @media only screen and (width <= $bp-small) {
+      padding: 1.25rem 2rem;
+      font-size: 1.8rem;
+    }
   }
 
   &__stars {
@@ -318,16 +362,29 @@
     margin-left: 3rem;
     color: var(--color-white);
     background-color: var(--color-primary);
+
+    @media only screen and (width <= $bp-small) {
+      padding: 0 1.5rem;
+    }
   }
 
   &__rating-average {
+    margin-bottom: -3px;
     font-size: 2.25rem;
     font-weight: 300;
+
+    @media only screen and (width <= $bp-small) {
+      font-size: 1.8rem;
+    }
   }
 
   &__rating-count {
     font-size: 0.8rem;
     text-transform: uppercase;
+
+    @media only screen and (width <= $bp-small) {
+      font-size: 0.5rem;
+    }
   }
 }
 
@@ -454,6 +511,10 @@
 
   @media only screen and (width <= $bp-medium) {
     padding: 2rem;
+  }
+
+  @media only screen and (width <= $bp-small) {
+    align-self: stretch;
   }
 
   &:not(:last-child) {

@@ -20,6 +20,12 @@
   font-size: 1.4rem;
   background-color: var(--color-white);
   border-bottom: var(--line);
+
+  @media only screen and (width <= $bp-smallest) {
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 11rem;
+  }
 }
 
 .content {
@@ -53,6 +59,10 @@
   @media only screen and (width <= $bp-medium) {
     padding: 3rem;
   }
+
+  @media only screen and (width <= $bp-small) {
+    flex-direction: column;
+  }
 }
 
 .description {
@@ -65,6 +75,11 @@
   @media only screen and (width <= $bp-medium) {
     padding: 2rem;
     margin-right: 3rem;
+  }
+
+  @media only screen and (width <= $bp-small) {
+    margin-right: 0;
+    margin-bottom: 3rem;
   }
 }
 

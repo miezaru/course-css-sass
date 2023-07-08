@@ -77,6 +77,9 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.search:focus-within {
+  background-color: var(--color-grey-light-3);
+}
 .search__input {
   width: 90%;
   padding: 0.7rem 2rem;
@@ -397,6 +400,7 @@ img {
   background-color: var(--color-primary);
 }
 .overview__rating-average {
+  margin-bottom: -3px;
   font-size: 2.25rem;
   font-weight: 300;
 }
@@ -835,5 +839,90 @@ img {
   .description {
     padding: 2rem;
     margin-right: 3rem;
+  }
+}
+
+@media only screen and (width <= 40em) {
+  .side-nav__link:link, .side-nav__link:visited {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1.5rem 0.5rem;
+  }
+  .side-nav__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0;
+    margin-bottom: 0.7rem;
+  }
+  .overview__heading {
+    padding: 1.25rem 2rem;
+    font-size: 1.8rem;
+  }
+  .overview__rating {
+    padding: 0 1.5rem;
+  }
+  .overview__rating-average {
+    font-size: 1.8rem;
+  }
+  .overview__rating-count {
+    font-size: 0.5rem;
+  }
+  .review {
+    -webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+                -ms-grid-row-align: stretch;
+            align-self: stretch;
+  }
+  .detail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .description {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (width <= 31.25em) {
+  .search {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    background-color: var(--color-grey-light-2);
+  }
+  .search__input {
+    width: 85%;
+    margin-right: -5.25rem;
+  }
+  .search__input:focus {
+    width: 90%;
+  }
+  .user-nav__icon-box:focus {
+    -webkit-box-shadow: inset 0 0 0 2px var(--color-primary-light);
+            box-shadow: inset 0 0 0 2px var(--color-primary-light);
+  }
+  .user-nav__user:focus {
+    -webkit-box-shadow: inset 0 0 0 2px var(--color-primary-light);
+            box-shadow: inset 0 0 0 2px var(--color-primary-light);
+  }
+  .header {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-align-content: space-around;
+        -ms-flex-line-pack: distribute;
+            align-content: space-around;
+    height: 11rem;
   }
 }
