@@ -8,6 +8,10 @@
   gap: 6rem;
   align-items: start;
   margin: 15rem 0;
+
+  @media only screen and (width <= $bp-small) {
+    margin: 10rem 0;
+  }
 }
 
 .feature {

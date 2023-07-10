@@ -4,6 +4,10 @@
   grid-column: center-start / center-end;
   gap: 7rem;
   margin: 15rem 0;
+
+  @media only screen and (width <= $bp-small) {
+    margin: 10rem 0;
+  }
 }
 
 .home {

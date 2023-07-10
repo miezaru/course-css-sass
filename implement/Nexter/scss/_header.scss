@@ -14,6 +14,14 @@
   background-position: center;
   background-size: cover;
 
+  @media only screen and (width <= $bp-medium) {
+    grid-column: 1 / -1;
+  }
+
+  @media only screen and (width <= $bp-medium) {
+    padding: 5rem;
+  }
+
   &__logo {
     justify-self: center;
     width: auto;
