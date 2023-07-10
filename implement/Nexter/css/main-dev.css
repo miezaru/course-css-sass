@@ -19,3 +19,47 @@ body {
   line-height: 1.6;
   color: #6d5d4b;
 }
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 80vh -webkit-min-content 40vw (-webkit-min-content)[3];
+  -ms-grid-rows: 80vh min-content 40vw (min-content)[3];
+  grid-template-rows: 80vh -webkit-min-content 40vw repeat(3, -webkit-min-content);
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+}
+
+.sidebar {
+  background-color: #c69963;
+}
+
+.header {
+  background-color: #54483a;
+}
+
+.realtors {
+  background-color: #101d2c;
+}
+
+.features {
+  background-color: #aaa;
+}
+
+.story__pictures {
+  background-color: #c69963;
+}
+.story__content {
+  background-color: #f9f7f6;
+}
+
+.homes {
+  background-color: #101d2c;
+}
+
+.gallery {
+  background-color: #54483a;
+}
+
+.footer {
+  background-color: #101d2c;
+}
