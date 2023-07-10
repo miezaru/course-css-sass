@@ -14,6 +14,8 @@
   }
 
   &__img {
+    height: auto;
+
     &--1 {
       grid-row: 2 / 6;
       grid-column: 2 / 6;
