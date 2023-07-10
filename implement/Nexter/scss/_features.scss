@@ -1,5 +1,9 @@
 .features {
-  grid-row: 2;
+  display: grid;
+
+  // grid-template-rows: auto auto;
+  grid-template-columns: repeat(3, 1fr);
   grid-column: center-start / center-end;
-  background-color: $color-grey-light-2;
+  gap: 6rem;
+  margin: 15rem 0;
 }
