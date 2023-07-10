@@ -5,7 +5,22 @@
   }
 
   &__content {
+    display: grid;
     grid-column: col-start 5 / full-end;
+    align-content: center;
+    justify-items: start;
+    padding: 6rem 8vw;
     background-color: $color-grey-light-1;
+
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
+    // justify-content: center;
+  }
+
+  &__text {
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+    font-style: italic;
   }
 }
