@@ -26,12 +26,32 @@
   }
 
   &__seenon-text {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    gap: 1.2rem;
+    align-items: center;
+    font-size: 1.6rem;
+    color: $color-grey-light-2;
+
+    &::before,
+    &::after {
+      display: block;
+      height: 1px;
+      content: '';
+      background-color: currentcolor;
+    }
   }
 
   &__seenon-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+    justify-items: center;
+
     img {
       width: auto;
       height: 2.5rem;
+      filter: brightness(70%);
     }
   }
 }

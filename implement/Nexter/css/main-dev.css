@@ -727,9 +727,42 @@ body {
   -ms-grid-column-align: start;
       justify-self: start;
 }
+.header__seenon-text {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.2rem -webkit-max-content 1.2rem 1fr;
+  -ms-grid-columns: 1fr 1.2rem max-content 1.2rem 1fr;
+  grid-template-columns: 1fr -webkit-max-content 1fr;
+  grid-template-columns: 1fr max-content 1fr;
+  gap: 1.2rem;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+  color: #aaa;
+}
+.header__seenon-text::before, .header__seenon-text::after {
+  display: block;
+  height: 1px;
+  content: "";
+  background-color: currentcolor;
+}
+.header__seenon-logos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3rem 1fr 3rem 1fr 3rem 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem;
+  justify-items: center;
+}
 .header__seenon-logos img {
   width: auto;
   height: 2.5rem;
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
 }
 
 .realtors {
