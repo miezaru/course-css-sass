@@ -548,6 +548,12 @@ body {
   font-weight: 400;
 }
 
+.title-h1 {
+  font-size: 4.5rem;
+  line-height: 1;
+  color: #f9f7f6;
+}
+
 .title-h2 {
   font-size: 4rem;
   font-style: italic;
@@ -664,8 +670,66 @@ body {
 }
 
 .header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1.5rem -webkit-min-content 1.5rem 6rem 1.5rem 1fr;
+  -ms-grid-rows: 1fr 1.5rem min-content 1.5rem 6rem 1.5rem 1fr;
+  grid-template-rows: 1fr -webkit-min-content 6rem 1fr;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  -ms-grid-columns: -webkit-max-content;
+  -ms-grid-columns: max-content;
+  grid-template-columns: -webkit-max-content;
+  grid-template-columns: max-content;
   grid-column: full-start/col-end 6;
-  background-color: #54483a;
+  row-gap: 1.5rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem 8rem 8rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 29, 44, 0.93)), to(rgba(16, 29, 44, 0.93))), url("../img/hero.jpeg");
+  background-image: -webkit-linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url("../img/hero.jpeg");
+  background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url("../img/hero.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.header > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.header > *:nth-child(2) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.header > *:nth-child(3) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+
+.header > *:nth-child(4) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+}
+.header__logo {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: auto;
+  height: 3rem;
+}
+.header__btn {
+  -webkit-align-self: start;
+      -ms-flex-item-align: start;
+              -ms-grid-row-align: start;
+          align-self: start;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+.header__seenon-logos img {
+  width: auto;
+  height: 2.5rem;
 }
 
 .realtors {
