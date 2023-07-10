@@ -2,8 +2,29 @@
   display: grid;
 
   // grid-template-rows: auto auto;
-  grid-template-columns: repeat(3, 1fr);
+  // grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-column: center-start / center-end;
   gap: 6rem;
+  align-items: start;
   margin: 15rem 0;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  row-gap: 1.5rem;
+  column-gap: 2.5rem;
+
+  &__icon {
+    grid-row: 1 / span 2; // -1 means last EXPLITID grid
+    width: 4.5rem;
+    height: 4.5rem;
+    fill: $color-primary;
+    transform: translateY(-1rem);
+  }
+
+  &__text {
+    font-size: 1.7rem;
+  }
 }

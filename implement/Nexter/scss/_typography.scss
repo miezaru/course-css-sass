@@ -1,0 +1,30 @@
+%title {
+  font-family: $font-display;
+  font-weight: 400;
+}
+
+.title-h1 {
+  @extend %title;
+}
+
+.title-h2 {
+  @extend %title;
+}
+
+.title-h3 {
+  @extend %title;
+}
+
+.title-h4 {
+  @extend %title;
+
+  font-size: 1.9rem;
+
+  &--light {
+    color: $color-grey-light-1;
+  }
+
+  &--dark {
+    color: $color-grey-dark-1;
+  }
+}
