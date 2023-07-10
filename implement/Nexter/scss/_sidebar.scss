@@ -2,6 +2,14 @@
   grid-row: 1 / -1;
   grid-column: sidebar-start / sidebar-end;
   background-color: $color-primary;
+
+  @media only screen and (width <= $bp-largest) {
+    display: flex;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 
 .nav-btn {
@@ -15,6 +23,12 @@
   background-color: inherit;
   border: none;
   border-radius: 0;
+
+  @media only screen and (width <= $bp-largest) {
+    width: auto;
+    margin-top: 0;
+    margin-right: 2rem;
+  }
 
   &__item {
     display: block;
@@ -37,6 +51,16 @@
 
     &::after {
       transform: translateY(1.3rem);
+    }
+
+    @media only screen and (width <= $bp-largest) {
+      &::before {
+        transform: translateY(-1.2rem);
+      }
+
+      &::after {
+        transform: translateY(1rem);
+      }
     }
   }
 }

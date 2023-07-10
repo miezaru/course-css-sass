@@ -1,4 +1,4 @@
-// COLOR VARIABLES
+// Color variables
 $color-primary: #c69963;
 $color-primary-dark: #b28451;
 $color-secondary: #101d2c;
@@ -9,9 +9,14 @@ $color-grey-dark-2: #6d5d4b;
 $color-white: #fff;
 $color-black: #000;
 
-// FONT VARIABLES
+// Font variables
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
+
+// Responsive breakpoints
+$bp-huge: 78.75em; // 1260px
+$bp-largest: 62.5em; // 1000px
+$bp-large: 56.25em; // 900px
 
 *,
 *::before,
@@ -24,6 +29,14 @@ $font-display: 'Josefin Sans', sans-serif;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @media only screen and (width <= $bp-huge) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (width <= $bp-large) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -41,4 +54,13 @@ body {
     [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
     [center-end]
     minmax(6rem, 1fr) [full-end];
+
+  @media only screen and (width <= $bp-largest) {
+    grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns:
+      [full-start] minmax(6rem, 1fr)
+      [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+      [center-end]
+      minmax(6rem, 1fr) [full-end];
+  }
 }
