@@ -36,6 +36,7 @@
     position: absolute;
     inset-block-start: 40%;
     inset-inline-start: 50%;
+    text-align: center;
     transform: translate(-50%, -50%);
 }
 

@@ -22,6 +22,10 @@ Dark green: hsl(160deg 64% 43%)
     /* color | gradient */
     --cl-grd-l: hsla(111deg 55% 64% / 80%);
     --cl-grd-d: hsla(160deg 64% 43% / 80%);
+
+    /* shadows */
+    --sh-btn-hover: 0 1rem 2rem hsla(0deg 0 0 / 20%);
+    --sh-btn-active: 0 0.5rem 1rem hsla(0deg 0 0 / 20%);
 }
 
 /* General styles */
@@ -54,7 +58,37 @@ img {
 
 /* headings */
 .heading-primary {
+    margin-block-end: 6rem;
     color: var(--cl-white);
     text-transform: uppercase;
     backface-visibility: hidden;
+}
+
+/* buttons */
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding-block: 1.5rem;
+    padding-inline: 4rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 100px;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    box-shadow: var(--sh-btn-hover);
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    box-shadow: var(--sh-btn-active);
+    transform: translateY(-1px);
+}
+
+.btn--white:link,
+.btn--white:visited {
+    color: var(--cl-text);
+    background-color: var(--cl-white);
 }
