@@ -22,17 +22,17 @@
     background-size: cover;
 }
 
-.logo-box {
+.header__logo-box {
     position: absolute;
     inset-block-start: 4rem;
     inset-inline-start: 4rem;
 }
 
-.logo {
+.header__logo {
     block-size: 3.5rem;
 }
 
-.text-box {
+.header__text-box {
     position: absolute;
     inset-block-start: 40%;
     inset-inline-start: 50%;
@@ -40,8 +40,8 @@
     transform: translate(-50%, -50%);
 }
 
-.heading-primary-main,
-.heading-primary-sub {
+.heading-primary--main,
+.heading-primary--sub {
     display: block;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -52,7 +52,7 @@
      */
 }
 
-.heading-primary-main {
+.heading-primary--main {
     display: flex;
     gap: 3.5rem;
     justify-content: space-evenly;
@@ -63,7 +63,7 @@
     animation-name: moveInLeft;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
     display: flex;
     justify-content: space-between;
     font-size: 2rem;
@@ -73,7 +73,7 @@
     animation-name: moveInRight;
 }
 
-.heading-primary-sub div {
+.heading-primary--sub div {
     display: flex;
     gap: 1.72rem;
 }
