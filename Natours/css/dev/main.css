@@ -1,5 +1,6 @@
 /* header */
 .header {
+    position: relative;
     block-size: 95vh;
 
     /* property creates a clipping region */
@@ -19,4 +20,50 @@
         );
     background-position: top;
     background-size: cover;
+}
+
+.logo-box {
+    position: absolute;
+    inset-block-start: 4rem;
+    inset-inline-start: 4rem;
+}
+
+.logo {
+    block-size: 3.5rem;
+}
+
+.text-box {
+    position: absolute;
+    inset-block-start: 40%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-primary-main,
+.heading-primary-sub {
+    display: block;
+}
+
+.heading-primary-main {
+    display: flex;
+    gap: 3.5rem;
+    justify-content: space-evenly;
+    font-size: 6rem;
+    font-weight: 400;
+}
+
+.heading-primary-main div {
+    inline-size: 100%;
+}
+
+.heading-primary-sub {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.heading-primary-sub div {
+    display: flex;
+    gap: 1.72rem;
 }

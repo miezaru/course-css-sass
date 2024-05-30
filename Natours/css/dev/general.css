@@ -8,6 +8,9 @@ Dark green: hsl(160deg 64% 43%)
 */
 
 :root {
+    /* color | defaults */
+    --cl-white: hsl(0deg 0% 100%);
+
     /* color | primary */
     --cl-green-l: hsl(111deg 55% 64%);
     --cl-green-m: hsl(140deg 49% 55%);
@@ -32,10 +35,13 @@ Dark green: hsl(160deg 64% 43%)
     font-family: inherit;
 }
 
-body {
-    padding: 30px;
-    font-family: Lato, sans-serif;
+html {
     font-size: 62.5%;
+}
+
+body {
+    padding: 3rem;
+    font-family: Lato, sans-serif;
     font-weight: 400;
     line-height: 1.7;
     color: hsl(0deg 0% 47%);
@@ -44,4 +50,10 @@ body {
 img {
     max-inline-size: 100%;
     block-size: auto;
+}
+
+/* headings */
+.heading-primary {
+    color: var(--cl-white);
+    text-transform: uppercase;
 }
