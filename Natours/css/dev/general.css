@@ -56,4 +56,5 @@ img {
 .heading-primary {
     color: var(--cl-white);
     text-transform: uppercase;
+    backface-visibility: hidden;
 }
