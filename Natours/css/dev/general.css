@@ -67,6 +67,7 @@ img {
 /* buttons */
 .btn:link,
 .btn:visited {
+    position: relative;
     display: inline-block;
     padding-block: 1.5rem;
     padding-inline: 4rem;
@@ -82,6 +83,24 @@ img {
     transform: translateY(-3px);
 }
 
+.btn::after {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    z-index: -1;
+    display: inline-block;
+    inline-size: 100%;
+    block-size: 100%;
+    content: "";
+    border-radius: 100px;
+    transition: all 0.4s;
+}
+
+.btn:hover::after {
+    opacity: 0;
+    transform: scaleX(1.4) scaleY(1.6);
+}
+
 .btn:active {
     box-shadow: var(--sh-btn-active);
     transform: translateY(-1px);
@@ -91,4 +110,15 @@ img {
 .btn--white:visited {
     color: var(--cl-text);
     background-color: var(--cl-white);
+}
+
+.btn--white::after {
+    background-color: var(--cl-white);
+}
+
+.btn--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+
+    /* apply to the element styles, from 0% */
+    animation-fill-mode: backwards;
 }
