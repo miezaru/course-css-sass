@@ -1,0 +1,53 @@
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--cl-text-d);
+}
+
+/* headings */
+.heading-primary {
+    margin-block-end: 6rem;
+    color: var(--cl-white);
+    text-transform: uppercase;
+    backface-visibility: hidden;
+
+    &--main,
+    &--sub {
+        display: block;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+
+        /*
+        animation-delay: 3s;
+        animation-iteration-count: 3; */
+    }
+
+    &--main {
+        display: flex;
+        gap: 3.5rem;
+        justify-content: space-evenly;
+        font-size: 6rem;
+        font-weight: 400;
+
+        /* animation: moveInLeft 1s ease-out */
+        animation-name: moveInLeft;
+    }
+
+    &--sub {
+        display: flex;
+        justify-content: space-between;
+        font-size: 2rem;
+        font-weight: 700;
+
+        /* animation: moveInRight 1s ease-out */
+        animation-name: moveInRight;
+    }
+
+    &--sub div {
+        display: flex;
+        gap: 1.74rem;
+    }
+}

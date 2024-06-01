@@ -1,0 +1,41 @@
+/* header */
+.header {
+    position: relative;
+    block-size: 95vh;
+
+    /* property creates a clipping region */
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    background-image: linear-gradient(
+            to right bottom,
+            var(--cl-grd-l),
+            var(--cl-grd-d)
+        ),
+        image-set(
+            url('../../img/hero/hero.avif') type('image/avif') 2x,
+            url('../../img/hero/hero-small.avif') type('image/avif') 1x,
+            url('../../img/hero/hero.webp') type('image/webp') 2x,
+            url('../../img/hero/hero-small.webp') type('image/webp') 1x,
+            url('../../img/hero/hero.jpeg') 2x,
+            url('../../img/hero/hero-small.jpeg') 1x
+        );
+    background-position: top;
+    background-size: cover;
+
+    &__logo-box {
+        position: absolute;
+        inset-block-start: 4rem;
+        inset-inline-start: 4rem;
+    }
+
+    &__logo {
+        block-size: 3.5rem;
+    }
+
+    &__text-box {
+        position: absolute;
+        inset-block-start: 40%;
+        inset-inline-start: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+}

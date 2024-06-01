@@ -24,8 +24,8 @@ Dark green: hsl(160deg 64% 43%)
     --cl-grd-d: hsla(160deg 64% 43% / 80%);
 
     /* shadows */
-    --sh-btn-hover: 0 1rem 2rem hsla(0deg 0 0 / 20%);
-    --sh-btn-active: 0 0.5rem 1rem hsla(0deg 0 0 / 20%);
+    --sh-btn-hover: 0 1rem 2rem hsla(0deg 0% 0% / 20%);
+    --sh-btn-active: 0 0.5rem 1rem hsla(0deg 0% 0% / 20%);
 }
 
 /* General styles */

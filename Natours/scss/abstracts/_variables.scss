@@ -1,0 +1,41 @@
+// colors | defaults
+$color-white: hsl(0deg 0% 100%);
+$color-black: hsl(0deg 0% 0%);
+
+// colors | primary
+$color-primary-l: hsl(111deg 55% 64%);
+$color-primary-m: hsl(140deg 49% 55%);
+$color-primary-d: hsl(160deg 64% 43%);
+
+// color | text
+$color-text: hsl(0deg 0% 47%);
+
+// color | gradient
+$color-gradient-l: hsla(111deg 55% 64% / 80%);
+$color-gradient-d: hsl(160deg 64% 43% / 80%);
+
+// shadows
+$shadow-btn-hover: 0 1rem 2rem hsla(0deg 0% 0% / 20%);
+$shadow-btn-active: 0 0.5rem 1rem hsla(0deg 0% 0% / 20%);
+
+:root {
+    // color | defaults
+    --cl-white: #{$color-white};
+    --cl-black: #{$color-black};
+
+    /* color | primary */
+    --cl-primary-l: #{$color-primary-l};
+    --cl-primary-m: #{$color-primary-m};
+    --cl-primary-d: #{$color-primary-d};
+
+    /* color | text */
+    --cl-text-d: #{$color-text};
+
+    /* color | gradient */
+    --cl-grd-l: #{$color-gradient-l};
+    --cl-grd-d: #{$color-gradient-d};
+
+    /* shadows */
+    --sh-btn-hover: #{$shadow-btn-hover};
+    --sh-btn-active: #{$shadow-btn-active};
+}
