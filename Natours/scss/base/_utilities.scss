@@ -1,7 +1,17 @@
+// utils | text
 .u-center-text {
     text-align: center;
 }
 
-.u-margin-bottom-8 {
+// utils | margins
+.u-margin-bottom-small {
+    margin-block-end: 1.5rem;
+}
+
+.u-margin-bottom-medium {
+    margin-block-end: 4rem;
+}
+
+.u-margin-bottom-big {
     margin-block-end: 8rem;
 }

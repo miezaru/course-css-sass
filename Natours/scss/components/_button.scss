@@ -6,7 +6,7 @@
         display: inline-block;
         padding-block: 1.5rem;
         padding-inline: 4rem;
-        font-size: 1.6rem;
+        font-size: var(--default-font-size);
         text-decoration: none;
         text-transform: uppercase;
         border-radius: 100px;
@@ -58,5 +58,30 @@
 
         /* apply to the element styles, from 0% */
         animation-fill-mode: backwards;
+    }
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        display: inline-block;
+        padding: 3px;
+        font-size: var(--default-font-size);
+        color: var(--cl-primary-m);
+        text-decoration: none;
+        border-block-end: 1px solid var(--cl-primary-m);
+        transition: all 0.2s;
+    }
+
+    &:hover {
+        color: var(--cl-white);
+        background-color: var(--cl-primary-m);
+        box-shadow: var(--sh-btn-text-color);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: var(--sh-btn-text-active);
+        transform: translateY(0);
     }
 }
