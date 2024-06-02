@@ -7,6 +7,9 @@ $color-primary-l: hsl(111deg 55% 64%);
 $color-primary-m: hsl(140deg 49% 55%);
 $color-primary-d: hsl(160deg 64% 43%);
 
+// color | greys
+$color-grey-l-1: hsl(0deg 0% 97%);
+
 // color | text
 $color-text: hsl(0deg 0% 47%);
 
@@ -17,6 +20,7 @@ $color-gradient-d: hsl(160deg 64% 43% / 80%);
 // shadows
 $shadow-btn-hover: 0 1rem 2rem hsla(0deg 0% 0% / 20%);
 $shadow-btn-active: 0 0.5rem 1rem hsla(0deg 0% 0% / 20%);
+$shadow-heading: 0.5rem 1rem 2rem hsla(0deg 0% 0% / 20%);
 
 // grid
 $grid-width: 114rem;
@@ -27,6 +31,9 @@ $gutter-horizontal: 6rem;
     // color | defaults
     --cl-white: #{$color-white};
     --cl-black: #{$color-black};
+
+    /* color | greys */
+    --cl-grey-l-1: #{$color-grey-l-1};
 
     /* color | primary */
     --cl-primary-l: #{$color-primary-l};
@@ -43,6 +50,7 @@ $gutter-horizontal: 6rem;
     /* shadows */
     --sh-btn-hover: #{$shadow-btn-hover};
     --sh-btn-active: #{$shadow-btn-active};
+    --sh-heading: #{$shadow-heading};
 
     // grid
     --grid-width: #{$grid-width};

@@ -51,3 +51,24 @@ body {
         gap: 1.74rem;
     }
 }
+
+.heading-secondary {
+    display: inline-block;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(
+        to right,
+        var(--cl-primary-l),
+        var(--cl-primary-d)
+    );
+    background-clip: text;
+    transition: all 0.2s;
+
+    &:hover {
+        text-shadow: var(--sh-heading);
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+    }
+}

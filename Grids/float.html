@@ -66,8 +66,11 @@
             }
 
             /* grid | col */
-            [class^="col-"]:not(:last-child) {
+            [class^="col-"] {
                 float: inline-start;
+            }
+
+            [class^="col-"]:not(:last-child) {
                 margin-inline-end: var(--grid-gutter-h);
             }
 
