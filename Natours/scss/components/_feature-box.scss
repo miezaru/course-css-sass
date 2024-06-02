@@ -1,0 +1,26 @@
+.feature-box {
+    padding: 2.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: var(--cl-bcg-white);
+    border-radius: 3px;
+    box-shadow: var(--sh-box);
+    transition: transform 0.3s;
+
+    &__icon {
+        display: inline-block;
+        margin-block-end: 0.5rem;
+        font-size: 6rem;
+        color: transparent;
+        background-image: linear-gradient(
+            to right,
+            var(--cl-primary-l),
+            var(--cl-primary-d)
+        );
+        background-clip: text;
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+}

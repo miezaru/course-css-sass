@@ -15,7 +15,10 @@ $color-text: hsl(0deg 0% 47%);
 
 // color | gradient
 $color-gradient-l: hsla(111deg 55% 64% / 80%);
-$color-gradient-d: hsl(160deg 64% 43% / 80%);
+$color-gradient-d: hsla(160deg 64% 43% / 80%);
+
+// color | background
+$color-bcg-white: hsla(0deg 0% 100% / 80%);
 
 // shadows
 $shadow-btn-hover: 0 1rem 2rem hsla(0deg 0% 0% / 20%);
@@ -25,6 +28,7 @@ $shadow-btn-text-active: 0 0.5rem 1rem hsla(0deg 0% 0% / 15%);
 $shadow-heading: 0.5rem 1rem 2rem hsla(0deg 0% 0% / 20%);
 $shadow-photo: 0 1.5rem 4rem hsla(0deg 0% 0% / 40%);
 $shadow-photo-hover: 0 2.5rem 4rem hsla(0deg 0% 0% / 50%);
+$shadow-box: 0 1.5rem 4rem hsla(0deg 0% 0% / 15%);
 
 // grid
 $grid-width: 114rem;
@@ -54,6 +58,9 @@ $default-font-size: 1.6rem;
     --cl-grd-l: #{$color-gradient-l};
     --cl-grd-d: #{$color-gradient-d};
 
+    /* color | background */
+    --cl-bcg-white: #{$color-bcg-white};
+
     /* shadows */
     --sh-btn-hover: #{$shadow-btn-hover};
     --sh-btn-active: #{$shadow-btn-active};
@@ -62,6 +69,7 @@ $default-font-size: 1.6rem;
     --sh-heading: #{$shadow-heading};
     --sh-photo: #{$shadow-photo};
     --sh-photo-hover: #{$shadow-photo-hover};
+    --sh-box: #{$shadow-box};
 
     // grid
     --grid-width: #{$grid-width};

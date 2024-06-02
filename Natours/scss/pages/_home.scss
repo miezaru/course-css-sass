@@ -1,5 +1,27 @@
 .section-about {
-    padding-block: 25rem;
+    padding-block: 26rem 39rem;
     margin-block-start: -20vh;
     background-color: var(--cl-grey-l-1);
+}
+
+.section-features {
+    padding-block: 20rem;
+    margin-block-start: -22rem;
+    background-image: linear-gradient(
+            to right bottom,
+            var(--cl-grd-l),
+            var(--cl-grd-d)
+        ),
+        image-set(
+            url('../../img/nat/nat-4.avif') type('image/avif'),
+            url('../../img/nat/nat-4.webp') type('image/webp'),
+            url('../../img/nat/nat-4.jpeg')
+        );
+    background-position: top;
+    background-size: cover;
+    transform: skewY(-7deg);
+
+    & > * {
+        transform: skewY(7deg);
+    }
 }
