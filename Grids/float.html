@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid | Float</title>
+
+        <style>
+            :root {
+                /* grid */
+                --grid-width: 114rem;
+                --grid-gutter-v: 8rem;
+                --grid-gutter-h: 6rem;
+
+                /* colors */
+                --cl-text: hsl(0deg 0% 40%);
+                --cl-bcg-main: hsl(0deg 0% 93%);
+                --cl-bcg-row: hsl(0deg 0% 85%);
+                --cl-bcg-item: hsl(200deg 30% 80%);
+            }
+
+            * {
+                box-sizing: inherit;
+                padding: 0;
+                margin: 0;
+            }
+
+            html {
+                font-size: 62.5%;
+            }
+
+            body {
+                box-sizing: border-box;
+                padding: 3.2rem;
+                font-family: sans-serif;
+                background-color: var(--cl-bcg-main);
+            }
+
+            /* grid | row */
+            .row {
+                max-inline-size: var(--grid-width);
+                block-size: 6rem;
+                margin-inline: auto;
+                font-size: 1.6rem;
+                font-weight: 700;
+                color: var(--cl-text);
+                background-color: var(--cl-bcg-row);
+            }
+
+            .row::after {
+                display: table;
+                clear: both;
+                content: "";
+            }
+
+            .row:not(:last-child) {
+                margin-block-end: var(--grid-gutter-v);
+            }
+
+            .row div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                block-size: 100%;
+                background-color: var(--cl-bcg-item);
+            }
+
+            /* grid | col */
+            [class^="col-"]:not(:last-child) {
+                float: inline-start;
+                margin-inline-end: var(--grid-gutter-h);
+            }
+
+            /* col-1-of-2 */
+            .col-1-of-2 {
+                inline-size: calc((100% - var(--grid-gutter-h)) / 2);
+            }
+
+            /* col-1-of-3 */
+            .col-1-of-3 {
+                inline-size: calc((100% - (2 * var(--grid-gutter-h))) / 3);
+            }
+
+            /* col-1-of-4 */
+            .col-1-of-4 {
+                inline-size: calc((100% - (3 * var(--grid-gutter-h))) / 4);
+            }
+
+            /* col-2-of-3 */
+            .col-2-of-3 {
+                inline-size: calc(
+                    ((100% - (2 * var(--grid-gutter-h))) / 3) * 2 +
+                        var(--grid-gutter-h)
+                );
+            }
+
+            /* col-2-of-4 */
+            .col-2-of-4 {
+                inline-size: calc(
+                    ((100% - (3 * var(--grid-gutter-h))) / 4) * 2 +
+                        var(--grid-gutter-h)
+                );
+            }
+
+            /* col-3-of-4 */
+            .col-3-of-4 {
+                inline-size: calc(
+                    ((100% - (3 * var(--grid-gutter-h))) / 4) * 3 +
+                        (2 * var(--grid-gutter-h))
+                );
+            }
+        </style>
+    </head>
+    <body>
+        <section class="grid-float">
+            <div class="row">
+                <div class="col-1-of-2">Col 1 of 2</div>
+                <div class="col-1-of-2">Col 1 of 2</div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">Col 1 of 3</div>
+                <div class="col-1-of-3">Col 1 of 3</div>
+                <div class="col-1-of-3">Col 1 of 3</div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">Col 1 of 3</div>
+                <div class="col-2-of-3">Col 2 of 3</div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">Col 1 of 4</div>
+                <div class="col-1-of-4">Col 1 of 4</div>
+                <div class="col-1-of-4">Col 1 of 4</div>
+                <div class="col-1-of-4">Col 1 of 4</div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">Col 1 of 4</div>
+                <div class="col-1-of-4">Col 1 of 4</div>
+                <div class="col-2-of-4">Col 2 of 4</div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">Col 1 of 4</div>
+                <div class="col-3-of-4">Col 3 of 4</div>
+            </div>
+        </section>
+    </body>
+</html>

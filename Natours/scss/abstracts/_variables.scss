@@ -18,6 +18,11 @@ $color-gradient-d: hsl(160deg 64% 43% / 80%);
 $shadow-btn-hover: 0 1rem 2rem hsla(0deg 0% 0% / 20%);
 $shadow-btn-active: 0 0.5rem 1rem hsla(0deg 0% 0% / 20%);
 
+// grid
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
 :root {
     // color | defaults
     --cl-white: #{$color-white};
@@ -38,4 +43,9 @@ $shadow-btn-active: 0 0.5rem 1rem hsla(0deg 0% 0% / 20%);
     /* shadows */
     --sh-btn-hover: #{$shadow-btn-hover};
     --sh-btn-active: #{$shadow-btn-active};
+
+    // grid
+    --grid-width: #{$grid-width};
+    --grid-gutter-v: #{$gutter-vertical};
+    --grid-gutter-h: #{$gutter-horizontal};
 }

@@ -1,0 +1,53 @@
+/* grid | row */
+.row {
+    max-inline-size: var(--grid-width);
+    margin-inline: auto;
+
+    &:not(:last-child) {
+        margin-block-end: var(--grid-gutter-v);
+    }
+
+    @include clearfix;
+}
+
+/* grid | col */
+[class^='col-']:not(:last-child) {
+    float: inline-start;
+    margin-inline-end: var(--grid-gutter-h);
+}
+
+.col-1-of-2 {
+    inline-size: calc((100% - var(--grid-gutter-h)) / 2);
+}
+
+/* col-1-of-3 */
+.col-1-of-3 {
+    inline-size: calc((100% - (2 * var(--grid-gutter-h))) / 3);
+}
+
+/* col-1-of-4 */
+.col-1-of-4 {
+    inline-size: calc((100% - (3 * var(--grid-gutter-h))) / 4);
+}
+
+/* col-2-of-3 */
+.col-2-of-3 {
+    inline-size: calc(
+        ((100% - (2 * var(--grid-gutter-h))) / 3) * 2 + var(--grid-gutter-h)
+    );
+}
+
+/* col-2-of-4 */
+.col-2-of-4 {
+    inline-size: calc(
+        ((100% - (3 * var(--grid-gutter-h))) / 4) * 2 + var(--grid-gutter-h)
+    );
+}
+
+/* col-3-of-4 */
+.col-3-of-4 {
+    inline-size: calc(
+        ((100% - (3 * var(--grid-gutter-h))) / 4) * 3 +
+            (2 * var(--grid-gutter-h))
+    );
+}
