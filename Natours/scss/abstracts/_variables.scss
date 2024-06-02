@@ -23,6 +23,8 @@ $shadow-btn-text-hover: 0 1rem 2rem hsla(0deg 0% 0% / 15%);
 $shadow-btn-active: 0 0.5rem 1rem hsla(0deg 0% 0% / 20%);
 $shadow-btn-text-active: 0 0.5rem 1rem hsla(0deg 0% 0% / 15%);
 $shadow-heading: 0.5rem 1rem 2rem hsla(0deg 0% 0% / 20%);
+$shadow-photo: 0 1.5rem 4rem hsla(0deg 0% 0% / 40%);
+$shadow-photo-hover: 0 2.5rem 4rem hsla(0deg 0% 0% / 50%);
 
 // grid
 $grid-width: 114rem;
@@ -58,6 +60,8 @@ $default-font-size: 1.6rem;
     --sh-btn-text-hover: #{$shadow-btn-text-hover};
     --sh-btn-text-active: #{$shadow-btn-text-active};
     --sh-heading: #{$shadow-heading};
+    --sh-photo: #{$shadow-photo};
+    --sh-photo-hover: #{$shadow-photo-hover};
 
     // grid
     --grid-width: #{$grid-width};
