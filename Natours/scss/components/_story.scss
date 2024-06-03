@@ -14,6 +14,7 @@
         float: inline-start;
         inline-size: 15rem;
         block-size: 15rem;
+        overflow: hidden;
         clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg);
         shape-outside: circle(50% at 50% 50%);
@@ -25,10 +26,38 @@
         inset-inline-start: 50%;
         max-inline-size: initial;
         block-size: 100%;
-        transform: translate(-50%, -50%);
+        transition: all 0.5s;
+        transform: translate(-50%, -50%) scale(1.4);
+
+        // fix shaky animations on old browsers
+        backface-visibility: hidden;
     }
 
     &__text {
         transform: skew(12deg);
+    }
+
+    &__caption {
+        position: absolute;
+        inset-block-start: 50%;
+        inset-inline-start: 50%;
+        font-size: 1.7rem;
+        color: var(--cl-white);
+        text-align: center;
+        text-transform: uppercase;
+        opacity: 0;
+        transition: all 0.5s;
+        transform: translate(-50%, 20%);
+        backface-visibility: hidden;
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        filter: blur(3px) brightness(80%);
+        transform: translate(-50%, -50%) scale(1);
     }
 }
