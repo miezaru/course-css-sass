@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+*:focus {
+    outline: 3px solid var(--cl-primary-m);
+}
+
 html {
     font-size: 62.5%;
 }

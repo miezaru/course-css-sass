@@ -193,4 +193,13 @@
         font-size: 6rem;
         font-weight: 100;
     }
+
+    // focus
+    &:focus-within &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:focus-within &__side--back {
+        transform: rotateY(0);
+    }
 }

@@ -18,6 +18,7 @@ $color-tertiary-d: hsl(247deg 95% 62%);
 // color | greys
 $color-grey-l-1: hsl(0deg 0% 97%);
 $color-grey-l-2: hsl(0deg 0% 93%);
+$color-grey-d: hsl(0deg 0% 20%);
 
 // color | text
 $color-text-d: hsl(0deg 0% 43%);
@@ -49,6 +50,7 @@ $shadow-box: 0 1.5rem 4rem hsla(0deg 0% 0% / 15%);
 $shadow-box-d: 0 1.5rem 4rem hsla(0deg 0% 0% / 20%);
 $shadow-story-box: 0 3rem 6rem hsla(0deg 0% 0% / 10%);
 $shadow-input: 0 1rem 2rem hsla(0deg 0% 0% / 10%);
+$shadow-link: 0 1rem 2rem hsla(0deg 0% 0% / 40%);
 
 // grid
 $grid-width: 114rem;
@@ -69,6 +71,7 @@ $border-radius-box: 3px;
     /* color | greys */
     --cl-grey-l-1: #{$color-grey-l-1};
     --cl-grey-l-2: #{$color-grey-l-2};
+    --cl-grey-d: #{$color-grey-d};
 
     /* color | primary */
     --cl-primary-l: #{$color-primary-l};
@@ -113,6 +116,7 @@ $border-radius-box: 3px;
     --sh-box-d: #{$shadow-box-d};
     --sh-story-box: #{$shadow-story-box};
     --sh-input: #{$shadow-input};
+    --sh-link: #{$shadow-link};
 
     /* grid */
     --grid-width: #{$grid-width};
