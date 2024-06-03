@@ -17,13 +17,18 @@ $color-tertiary-d: hsl(247deg 95% 62%);
 
 // color | greys
 $color-grey-l-1: hsl(0deg 0% 97%);
+$color-grey-l-2: hsl(0deg 0% 93%);
 
 // color | text
 $color-text: hsl(0deg 0% 47%);
 
 // color | gradient
-$color-gradient-l: hsla(111deg 55% 64% / 80%);
-$color-gradient-d: hsla(160deg 64% 43% / 80%);
+$color-gradient-pr-l: hsla(111deg 55% 64% / 80%);
+$color-gradient-pr-d: hsla(160deg 64% 43% / 80%);
+$color-gradient-sec-l: hsla(44deg 100% 50% / 85%);
+$color-gradient-sec-d: hsla(21deg 100% 59% / 85%);
+$color-gradient-ter-l: hsla(209deg 100% 58% / 85%);
+$color-gradient-ter-d: hsla(247deg 95% 62% / 85%);
 
 // color | background
 $color-bcg-white: hsla(0deg 0% 100% / 80%);
@@ -53,6 +58,7 @@ $default-font-size: 1.6rem;
 
     /* color | greys */
     --cl-grey-l-1: #{$color-grey-l-1};
+    --cl-grey-l-2: #{$color-grey-l-2};
 
     /* color | primary */
     --cl-primary-l: #{$color-primary-l};
@@ -71,8 +77,12 @@ $default-font-size: 1.6rem;
     --cl-text-d: #{$color-text};
 
     /* color | gradient */
-    --cl-grd-l: #{$color-gradient-l};
-    --cl-grd-d: #{$color-gradient-d};
+    --cl-gradient-pr-l: #{$color-gradient-pr-l};
+    --cl-gradient-pr-d: #{$color-gradient-pr-d};
+    --cl-gradient-sec-l: #{$color-gradient-sec-l};
+    --cl-gradient-sec-d: #{$color-gradient-sec-d};
+    --cl-gradient-ter-l: #{$color-gradient-ter-l};
+    --cl-gradient-ter-d: #{$color-gradient-ter-d};
 
     /* color | background */
     --cl-bcg-white: #{$color-bcg-white};

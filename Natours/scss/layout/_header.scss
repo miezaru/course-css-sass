@@ -7,16 +7,16 @@
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     background-image: linear-gradient(
             to right bottom,
-            var(--cl-grd-l),
-            var(--cl-grd-d)
+            var(--cl-gradient-pr-l),
+            var(--cl-gradient-pr-d)
         ),
         image-set(
             url('../../img/hero/hero.avif') type('image/avif') 2x,
             url('../../img/hero/hero-small.avif') type('image/avif') 1x,
             url('../../img/hero/hero.webp') type('image/webp') 2x,
             url('../../img/hero/hero-small.webp') type('image/webp') 1x,
-            url('../../img/hero/hero.jpeg') 2x,
-            url('../../img/hero/hero-small.jpeg') 1x
+            url('../../img/hero/hero.jpg') 2x,
+            url('../../img/hero/hero-small.jpg') 1x
         );
     background-position: top;
     background-size: cover;

@@ -9,13 +9,13 @@
     margin-block-start: -22rem;
     background-image: linear-gradient(
             to right bottom,
-            var(--cl-grd-l),
-            var(--cl-grd-d)
+            var(--cl-gradient-pr-l),
+            var(--cl-gradient-pr-d)
         ),
         image-set(
             url('../../img/nat/nat-4.avif') type('image/avif'),
             url('../../img/nat/nat-4.webp') type('image/webp'),
-            url('../../img/nat/nat-4.jpeg')
+            url('../../img/nat/nat-4.jpg')
         );
     background-position: top;
     background-size: cover;
