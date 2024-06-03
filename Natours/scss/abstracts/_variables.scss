@@ -32,6 +32,7 @@ $color-gradient-ter-d: hsla(247deg 95% 62% / 85%);
 
 // color | background
 $color-bcg-white: hsla(0deg 0% 100% / 80%);
+$color-bcg-white-2: hsla(0deg 0% 100% / 60%);
 
 // shadows
 $shadow-btn-hover: 0 1rem 2rem hsla(0deg 0% 0% / 20%);
@@ -87,6 +88,7 @@ $default-font-size: 1.6rem;
 
     /* color | background */
     --cl-bcg-white: #{$color-bcg-white};
+    --cl-bcg-white-2: #{$color-bcg-white-2};
 
     /* shadows */
     --sh-btn-hover: #{$shadow-btn-hover};
