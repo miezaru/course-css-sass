@@ -3,7 +3,7 @@
     font-size: 1.5rem;
     text-align: center;
     background-color: var(--cl-bcg-white);
-    border-radius: 3px;
+    border-radius: var(--border-radius-box);
     box-shadow: var(--sh-box);
     transition: transform 0.3s;
 

@@ -11,7 +11,7 @@
         inline-size: 100%;
         block-size: 52rem;
         overflow: hidden;
-        border-radius: 3px;
+        border-radius: var(--border-radius-box);
         box-shadow: var(--sh-box);
         transition: all 0.8s ease;
         backface-visibility: hidden;
@@ -63,8 +63,8 @@
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         background-size: cover;
         background-blend-mode: screen;
-        border-start-start-radius: 3px;
-        border-start-end-radius: 3px;
+        border-start-start-radius: var(--border-radius-box);
+        border-start-end-radius: var(--border-radius-box);
 
         &--1 {
             background-image: linear-gradient(

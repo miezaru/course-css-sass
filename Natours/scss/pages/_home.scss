@@ -36,3 +36,38 @@
     position: relative;
     padding: 15rem;
 }
+
+.section-book {
+    padding-block: 15rem;
+    background-image: linear-gradient(
+        to right bottom,
+        var(--cl-primary-l),
+        var(--cl-primary-d)
+    );
+}
+
+.book {
+    block-size: 50rem;
+    background-image: linear-gradient(
+            105deg,
+            var(--cl-bcg-white-3) 0%,
+            var(--cl-bcg-white-3) 50%,
+            transparent 50%
+        ),
+        image-set(
+            url('../../img/nat/nat-10.avif') type('image/avif'),
+            url('../../img/nat/nat-10.webp') type('image/webp'),
+            url('../../img/nat/nat-10.jpg')
+        );
+    background-repeat: no-repeat;
+    background-size: cover;
+    // cover = 100%
+    background-size: 100%;
+    border-radius: var(--border-radius-box);
+    box-shadow: var(--sh-box-d);
+
+    &__form {
+        inline-size: 50%;
+        padding: 6rem;
+    }
+}

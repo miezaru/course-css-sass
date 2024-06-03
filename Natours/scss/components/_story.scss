@@ -5,7 +5,7 @@
     margin-inline: auto;
     font-size: var(--default-font-size);
     background-color: var(--cl-bcg-white-2);
-    border-radius: 3px;
+    border-radius: var(--border-radius-box);
     box-shadow: var(--sh-story-box);
     transform: skewX(-12deg);
 

@@ -33,6 +33,7 @@ $color-gradient-ter-d: hsla(247deg 95% 62% / 85%);
 // color | background
 $color-bcg-white: hsla(0deg 0% 100% / 80%);
 $color-bcg-white-2: hsla(0deg 0% 100% / 60%);
+$color-bcg-white-3: hsla(0deg 0% 100% / 90%);
 
 // shadows
 $shadow-btn-hover: 0 1rem 2rem hsla(0deg 0% 0% / 20%);
@@ -43,6 +44,7 @@ $shadow-heading: 0.5rem 1rem 2rem hsla(0deg 0% 0% / 20%);
 $shadow-photo: 0 1.5rem 4rem hsla(0deg 0% 0% / 40%);
 $shadow-photo-hover: 0 2.5rem 4rem hsla(0deg 0% 0% / 50%);
 $shadow-box: 0 1.5rem 4rem hsla(0deg 0% 0% / 15%);
+$shadow-box-d: 0 1.5rem 4rem hsla(0deg 0% 0% / 20%);
 $shadow-story-box: 0 3rem 6rem hsla(0deg 0% 0% / 10%);
 
 // grid
@@ -53,8 +55,11 @@ $gutter-horizontal: 6rem;
 // fonts
 $default-font-size: 1.6rem;
 
+// border-radius
+$border-radius-box: 3px;
+
 :root {
-    // color | defaults
+    /* color | defaults */
     --cl-white: #{$color-white};
     --cl-black: #{$color-black};
 
@@ -89,6 +94,7 @@ $default-font-size: 1.6rem;
     /* color | background */
     --cl-bcg-white: #{$color-bcg-white};
     --cl-bcg-white-2: #{$color-bcg-white-2};
+    --cl-bcg-white-3: #{$color-bcg-white-3};
 
     /* shadows */
     --sh-btn-hover: #{$shadow-btn-hover};
@@ -99,13 +105,17 @@ $default-font-size: 1.6rem;
     --sh-photo: #{$shadow-photo};
     --sh-photo-hover: #{$shadow-photo-hover};
     --sh-box: #{$shadow-box};
+    --sh-box-d: #{$shadow-box-d};
     --sh-story-box: #{$shadow-story-box};
 
-    // grid
+    /* grid */
     --grid-width: #{$grid-width};
     --grid-gutter-v: #{$gutter-vertical};
     --grid-gutter-h: #{$gutter-horizontal};
 
-    // fonts
+    /* fonts */
     --default-font-size: #{$default-font-size};
+
+    /* border-radius */
+    --border-radius-box: #{$border-radius-box};
 }
