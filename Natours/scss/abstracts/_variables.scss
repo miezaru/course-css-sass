@@ -42,6 +42,7 @@ $shadow-heading: 0.5rem 1rem 2rem hsla(0deg 0% 0% / 20%);
 $shadow-photo: 0 1.5rem 4rem hsla(0deg 0% 0% / 40%);
 $shadow-photo-hover: 0 2.5rem 4rem hsla(0deg 0% 0% / 50%);
 $shadow-box: 0 1.5rem 4rem hsla(0deg 0% 0% / 15%);
+$shadow-story-box: 0 3rem 6rem hsla(0deg 0% 0% / 10%);
 
 // grid
 $grid-width: 114rem;
@@ -96,6 +97,7 @@ $default-font-size: 1.6rem;
     --sh-photo: #{$shadow-photo};
     --sh-photo-hover: #{$shadow-photo-hover};
     --sh-box: #{$shadow-box};
+    --sh-story-box: #{$shadow-story-box};
 
     // grid
     --grid-width: #{$grid-width};

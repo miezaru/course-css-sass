@@ -1,0 +1,34 @@
+.story {
+    inline-size: 75%;
+    padding: 6rem;
+    padding-inline-start: 9rem;
+    margin-inline: auto;
+    font-size: var(--default-font-size);
+    background-color: var(--cl-white);
+    border-radius: 3px;
+    box-shadow: var(--sh-story-box);
+    transform: skewX(-12deg);
+
+    &__shape {
+        position: relative;
+        float: inline-start;
+        inline-size: 15rem;
+        block-size: 15rem;
+        clip-path: circle(50% at 50% 50%);
+        transform: translateX(-3rem) skewX(12deg);
+        shape-outside: circle(50% at 50% 50%);
+    }
+
+    &__img {
+        position: absolute;
+        inset-block-start: 50%;
+        inset-inline-start: 50%;
+        max-inline-size: initial;
+        block-size: 100%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__text {
+        transform: skew(12deg);
+    }
+}

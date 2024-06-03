@@ -19,6 +19,7 @@
     margin-inline-end: var(--grid-gutter-h);
 }
 
+/* col-1-of-2 */
 .col-1-of-2 {
     inline-size: calc((100% - var(--grid-gutter-h)) / 2);
 }
