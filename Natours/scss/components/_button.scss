@@ -22,6 +22,7 @@
         inline-size: 100%;
         block-size: 100%;
         content: '';
+        background-color: inherit;
         border-radius: 100px;
         transition: all 0.4s;
     }
@@ -42,11 +43,8 @@
     }
 
     &--white {
-        &:link,
-        &:visited {
-            color: var(--cl-text-d);
-            background-color: var(--cl-white);
-        }
+        color: var(--cl-text-d);
+        background-color: var(--cl-white);
 
         &::after {
             background-color: var(--cl-white);
@@ -58,6 +56,11 @@
 
         /* apply to the element styles, from 0% */
         animation-fill-mode: backwards;
+    }
+
+    &--green {
+        color: var(--cl-white);
+        background-color: var(--cl-primary-m);
     }
 }
 
