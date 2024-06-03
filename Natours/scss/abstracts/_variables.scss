@@ -20,7 +20,8 @@ $color-grey-l-1: hsl(0deg 0% 97%);
 $color-grey-l-2: hsl(0deg 0% 93%);
 
 // color | text
-$color-text: hsl(0deg 0% 47%);
+$color-text-d: hsl(0deg 0% 43%);
+$color-text-d-2: hsl(0deg 0% 60%);
 
 // color | gradient
 $color-gradient-pr-l: hsla(111deg 55% 64% / 80%);
@@ -34,6 +35,7 @@ $color-gradient-ter-d: hsla(247deg 95% 62% / 85%);
 $color-bcg-white: hsla(0deg 0% 100% / 80%);
 $color-bcg-white-2: hsla(0deg 0% 100% / 60%);
 $color-bcg-white-3: hsla(0deg 0% 100% / 90%);
+$color-bcg-white-4: hsla(0deg 0% 100% / 50%);
 
 // shadows
 $shadow-btn-hover: 0 1rem 2rem hsla(0deg 0% 0% / 20%);
@@ -46,6 +48,7 @@ $shadow-photo-hover: 0 2.5rem 4rem hsla(0deg 0% 0% / 50%);
 $shadow-box: 0 1.5rem 4rem hsla(0deg 0% 0% / 15%);
 $shadow-box-d: 0 1.5rem 4rem hsla(0deg 0% 0% / 20%);
 $shadow-story-box: 0 3rem 6rem hsla(0deg 0% 0% / 10%);
+$shadow-input: 0 1rem 2rem hsla(0deg 0% 0% / 10%);
 
 // grid
 $grid-width: 114rem;
@@ -81,7 +84,8 @@ $border-radius-box: 3px;
     --cl-tertiary-d: #{$color-tertiary-d};
 
     /* color | text */
-    --cl-text-d: #{$color-text};
+    --cl-text-d: #{$color-text-d};
+    --cl-text-d-2: #{$color-text-d-2};
 
     /* color | gradient */
     --cl-gradient-pr-l: #{$color-gradient-pr-l};
@@ -95,6 +99,7 @@ $border-radius-box: 3px;
     --cl-bcg-white: #{$color-bcg-white};
     --cl-bcg-white-2: #{$color-bcg-white-2};
     --cl-bcg-white-3: #{$color-bcg-white-3};
+    --cl-bcg-white-4: #{$color-bcg-white-4};
 
     /* shadows */
     --sh-btn-hover: #{$shadow-btn-hover};
@@ -107,6 +112,7 @@ $border-radius-box: 3px;
     --sh-box: #{$shadow-box};
     --sh-box-d: #{$shadow-box-d};
     --sh-story-box: #{$shadow-story-box};
+    --sh-input: #{$shadow-input};
 
     /* grid */
     --grid-width: #{$grid-width};
