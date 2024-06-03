@@ -1,5 +1,6 @@
 /* buttons */
 .btn {
+    &,
     &:link,
     &:visited {
         position: relative;
@@ -9,6 +10,8 @@
         font-size: var(--default-font-size);
         text-decoration: none;
         text-transform: uppercase;
+        cursor: pointer;
+        border: none;
         border-radius: 100px;
         transition: all 0.2s;
     }
@@ -37,7 +40,9 @@
         }
     }
 
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         box-shadow: var(--sh-btn-active);
         transform: translateY(-1px);
     }
