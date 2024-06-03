@@ -7,6 +7,14 @@ $color-primary-l: hsl(111deg 55% 64%);
 $color-primary-m: hsl(140deg 49% 55%);
 $color-primary-d: hsl(160deg 64% 43%);
 
+// colors | secondary
+$color-secondary-l: hsl(44deg 100% 50%);
+$color-secondary-d: hsl(21deg 100% 59%);
+
+// colors | tertiary
+$color-tertiary-l: hsl(209deg 100% 58%);
+$color-tertiary-d: hsl(247deg 95% 62%);
+
 // color | greys
 $color-grey-l-1: hsl(0deg 0% 97%);
 
@@ -50,6 +58,14 @@ $default-font-size: 1.6rem;
     --cl-primary-l: #{$color-primary-l};
     --cl-primary-m: #{$color-primary-m};
     --cl-primary-d: #{$color-primary-d};
+
+    /* color | secondary */
+    --cl-secondary-l: #{$color-secondary-l};
+    --cl-secondary-d: #{$color-secondary-d};
+
+    /* color | tertiary */
+    --cl-tertiary-l: #{$color-tertiary-l};
+    --cl-tertiary-d: #{$color-tertiary-d};
 
     /* color | text */
     --cl-text-d: #{$color-text};

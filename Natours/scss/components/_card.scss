@@ -1,0 +1,57 @@
+.card {
+    position: relative;
+    block-size: 50rem;
+    perspective: 150rem;
+
+    &__side {
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        inline-size: 100%;
+        block-size: 50rem;
+        border-radius: 3px;
+        box-shadow: var(--sh-box);
+        transition: all 0.8s ease;
+        backface-visibility: hidden;
+
+        &--front {
+            background-color: var(--cl-white);
+        }
+
+        &--back {
+            transform: rotateY(-180deg);
+
+            &-1 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    var(--cl-secondary-l),
+                    var(--cl-secondary-d)
+                );
+            }
+
+            &-2 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    var(--cl-primary-l),
+                    var(--cl-primary-d)
+                );
+            }
+
+            &-3 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    var(--cl-tertiary-l),
+                    var(--cl-tertiary-d)
+                );
+            }
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+}
