@@ -1,0 +1,87 @@
+.navigation {
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        position: fixed;
+        inset-block-start: 6rem;
+        inset-inline-end: 6rem;
+        z-index: 2000;
+        inline-size: 7rem;
+        block-size: 7rem;
+        background-color: var(--cl-white);
+        border-radius: 50%;
+    }
+
+    &__background {
+        position: fixed;
+        inset-block-start: 6.5rem;
+        inset-inline-end: 6.5rem;
+        z-index: 1000;
+        inline-size: 6rem;
+        block-size: 6rem;
+        background-image: radial-gradient(
+            var(--cl-primary-l),
+            var(--cl-primary-d)
+        );
+        border-radius: 50%;
+        transform: scale(80);
+    }
+
+    &__nav {
+        position: fixed;
+        inset-block-start: 0;
+        inset-inline-end: 0;
+        z-index: 1500;
+        inline-size: 100%;
+        block-size: 100vh;
+    }
+
+    &__list {
+        position: absolute;
+        inset-block-start: 50%;
+        inset-inline-start: 50%;
+        text-align: center;
+        list-style: none;
+        transform: translate(-50%, -50%);
+    }
+
+    &__item {
+        margin: 1rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            padding-block: 1rem;
+            padding-inline: 2rem;
+            font-size: 3rem;
+            font-weight: 300;
+            color: var(--cl-white);
+            text-decoration: none;
+            text-transform: uppercase;
+            background-image: linear-gradient(
+                120deg,
+                transparent 0%,
+                transparent 50%,
+                var(--cl-white) 50%
+            );
+            background-size: 260%;
+            transition: all 0.4s;
+
+            span {
+                display: inline-block;
+                margin-inline-end: 1.5rem;
+            }
+        }
+
+        &:hover,
+        &:active {
+            color: var(--cl-primary-m);
+            background-position: 100%;
+            transform: translateX(1rem);
+        }
+    }
+}
