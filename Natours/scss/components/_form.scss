@@ -78,9 +78,6 @@
         border-radius: 50%;
 
         &::after {
-            position: absolute;
-            inset-block-start: 50%;
-            inset-inline-start: 50%;
             display: inline-block;
             inline-size: 1.3rem;
             block-size: 1.3rem;
@@ -89,7 +86,8 @@
             border-radius: 50%;
             opacity: 0;
             transition: opacity 0.2s;
-            transform: translate(-50%, -50%);
+
+            @include absoluteCenter;
         }
     }
 

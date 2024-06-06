@@ -171,12 +171,10 @@
     // card | back styling
 
     &__cta {
-        position: absolute;
-        inset-block-start: 50%;
-        inset-inline-start: 50%;
         inline-size: 90%;
         text-align: center;
-        transform: translate(-50%, -50%);
+
+        @include absoluteCenter;
     }
 
     &__price-box {

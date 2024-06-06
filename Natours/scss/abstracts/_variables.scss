@@ -37,6 +37,7 @@ $color-bcg-white: hsla(0deg 0% 100% / 80%);
 $color-bcg-white-2: hsla(0deg 0% 100% / 60%);
 $color-bcg-white-3: hsla(0deg 0% 100% / 90%);
 $color-bcg-white-4: hsla(0deg 0% 100% / 50%);
+$color-bcg-black: hsla(0deg 0% 0% / 80%);
 
 // shadows
 $shadow-btn-hover: 0 1rem 2rem hsla(0deg 0% 0% / 20%);
@@ -52,6 +53,7 @@ $shadow-story-box: 0 3rem 6rem hsla(0deg 0% 0% / 10%);
 $shadow-input: 0 1rem 2rem hsla(0deg 0% 0% / 10%);
 $shadow-link: 0 1rem 2rem hsla(0deg 0% 0% / 40%);
 $shadow-navi-btn: 0 1rem 3rem hsla(0deg 0% 0% / 10%);
+$shadow-popup: 0 2rem 4rem hsla(0deg 0% 0% / 20%);
 
 // grid
 $grid-width: 114rem;
@@ -104,6 +106,7 @@ $border-radius-box: 3px;
     --cl-bcg-white-2: #{$color-bcg-white-2};
     --cl-bcg-white-3: #{$color-bcg-white-3};
     --cl-bcg-white-4: #{$color-bcg-white-4};
+    --cl-bcg-black: #{$color-bcg-black};
 
     /* shadows */
     --sh-btn-hover: #{$shadow-btn-hover};
@@ -119,6 +122,7 @@ $border-radius-box: 3px;
     --sh-input: #{$shadow-input};
     --sh-link: #{$shadow-link};
     --sh-navi-btn: #{$shadow-navi-btn};
+    --sh-popup: #{$shadow-popup};
 
     /* grid */
     --grid-width: #{$grid-width};
