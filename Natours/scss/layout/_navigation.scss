@@ -10,6 +10,10 @@
         z-index: 2000;
         inline-size: 7rem;
         block-size: 7rem;
+
+        // centering icon
+        text-align: center;
+        cursor: pointer;
         background-color: var(--cl-white);
         border-radius: 50%;
         box-shadow: var(--sh-navi-btn);
@@ -98,5 +102,60 @@
     &__checkbox:checked ~ &__nav {
         inline-size: 100%;
         opacity: 1;
+    }
+
+    // navigation | icon
+    &__icon {
+        position: relative;
+        margin-block-start: 3.5rem;
+
+        &,
+        &::before,
+        &::after {
+            display: inline-block;
+            inline-size: 3rem;
+            block-size: 2px;
+            background-color: var(--cl-grey-d);
+        }
+
+        &::after,
+        &::before {
+            position: absolute;
+            inset-inline-start: 0;
+            content: '';
+            transition: all 0.2s;
+        }
+
+        &::before {
+            inset-block-start: -0.8rem;
+            transform-origin: center;
+        }
+
+        &::after {
+            inset-block-start: 0.8rem;
+            transform-origin: center;
+        }
+    }
+
+    &__button:hover &__icon::before {
+        inset-block-start: -1rem;
+    }
+
+    &__button:hover &__icon::after {
+        inset-block-start: 1rem;
+    }
+
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::before {
+        inset-block-start: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+        inset-block-start: 0;
+        transform: rotate(-135deg);
     }
 }
