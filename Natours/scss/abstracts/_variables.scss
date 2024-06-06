@@ -51,6 +51,7 @@ $shadow-box-d: 0 1.5rem 4rem hsla(0deg 0% 0% / 20%);
 $shadow-story-box: 0 3rem 6rem hsla(0deg 0% 0% / 10%);
 $shadow-input: 0 1rem 2rem hsla(0deg 0% 0% / 10%);
 $shadow-link: 0 1rem 2rem hsla(0deg 0% 0% / 40%);
+$shadow-navi-btn: 0 1rem 3rem hsla(0deg 0% 0% / 10%);
 
 // grid
 $grid-width: 114rem;
@@ -117,6 +118,7 @@ $border-radius-box: 3px;
     --sh-story-box: #{$shadow-story-box};
     --sh-input: #{$shadow-input};
     --sh-link: #{$shadow-link};
+    --sh-navi-btn: #{$shadow-navi-btn};
 
     /* grid */
     --grid-width: #{$grid-width};

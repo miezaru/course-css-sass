@@ -12,6 +12,7 @@
         block-size: 7rem;
         background-color: var(--cl-white);
         border-radius: 50%;
+        box-shadow: var(--sh-navi-btn);
     }
 
     &__background {
@@ -26,7 +27,8 @@
             var(--cl-primary-d)
         );
         border-radius: 50%;
-        transform: scale(80);
+        transition: transform 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+        // transform: scale(80);
     }
 
     &__nav {
@@ -35,13 +37,17 @@
         inset-inline-end: 0;
         z-index: 1500;
         inline-size: 100%;
+        inline-size: 0;
         block-size: 100vh;
+        opacity: 0;
+        transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
     &__list {
         position: absolute;
         inset-block-start: 50%;
         inset-inline-start: 50%;
+        inline-size: 100%;
         text-align: center;
         list-style: none;
         transform: translate(-50%, -50%);
@@ -83,5 +89,14 @@
             background-position: 100%;
             transform: translateX(1rem);
         }
+    }
+
+    &__checkbox:checked ~ &__background {
+        transform: scale(80);
+    }
+
+    &__checkbox:checked ~ &__nav {
+        inline-size: 100%;
+        opacity: 1;
     }
 }
