@@ -4,6 +4,10 @@
     color: var(--cl-grey-l-1);
     background-color: var(--cl-grey-d);
 
+    @include respond(tab-port) {
+        padding-block: 8rem;
+    }
+
     &__logo-box {
         margin-block-end: 8rem;
         text-align: center;
@@ -18,6 +22,11 @@
         display: inline-block;
         padding-block-start: 2rem;
         border-block-start: 1px solid var(--cl-text-d-2);
+
+        @include respond(tab-port) {
+            inline-size: 100%;
+            text-align: center;
+        }
     }
 
     &__list {
@@ -56,5 +65,10 @@
         inline-size: 80%;
         padding-block-start: 2rem;
         border-block-start: 1px solid var(--cl-text-d-2);
+
+        @include respond(tab-port) {
+            float: none;
+            inline-size: 100%;
+        }
     }
 }

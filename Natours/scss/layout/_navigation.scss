@@ -17,6 +17,16 @@
         background-color: var(--cl-white);
         border-radius: 50%;
         box-shadow: var(--sh-navi-btn);
+
+        @include respond(tab-port) {
+            inset-block-start: 4rem;
+            inset-inline-end: 4rem;
+        }
+
+        @include respond(phone) {
+            inset-block-start: 3rem;
+            inset-inline-end: 3rem;
+        }
     }
 
     &__background {
@@ -33,6 +43,16 @@
         border-radius: 50%;
         transition: transform 0.6s cubic-bezier(0.86, 0, 0.07, 1);
         // transform: scale(80);
+
+        @include respond(tab-port) {
+            inset-block-start: 4.5rem;
+            inset-inline-end: 4.5rem;
+        }
+
+        @include respond(phone) {
+            inset-block-start: 3.5rem;
+            inset-inline-end: 3.5rem;
+        }
     }
 
     &__nav {

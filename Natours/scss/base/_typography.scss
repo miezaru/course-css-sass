@@ -1,6 +1,5 @@
 body {
     box-sizing: border-box;
-    padding: 3rem;
     font-family: Lato, sans-serif;
     font-weight: 400;
     line-height: 1.7;
@@ -34,6 +33,11 @@ body {
 
         /* animation: moveInLeft 1s ease-out */
         animation-name: moveInLeft;
+
+        @include respond(phone) {
+            gap: 1rem;
+            font-size: 5rem;
+        }
     }
 
     &--sub {
@@ -49,6 +53,10 @@ body {
     &--sub div {
         display: flex;
         gap: 1.74rem;
+
+        @include respond(phone) {
+            gap: 0.5rem;
+        }
     }
 }
 
@@ -66,6 +74,14 @@ body {
     );
     background-clip: text;
     transition: all 0.2s;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
 
     &:hover {
         text-shadow: var(--sh-heading);

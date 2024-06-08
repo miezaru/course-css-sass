@@ -58,6 +58,7 @@ $shadow-popup: 0 2rem 4rem hsla(0deg 0% 0% / 20%);
 // grid
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
+$gutter-vertical-sm: 6rem;
 $gutter-horizontal: 6rem;
 
 // fonts
@@ -127,6 +128,7 @@ $border-radius-box: 3px;
     /* grid */
     --grid-width: #{$grid-width};
     --grid-gutter-v: #{$gutter-vertical};
+    --grid-gutter-v-sm: #{$gutter-vertical-sm};
     --grid-gutter-h: #{$gutter-horizontal};
 
     /* fonts */

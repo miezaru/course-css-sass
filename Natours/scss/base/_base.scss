@@ -25,6 +25,7 @@ html {
     }
 
     @include respond(big-desktop) {
+        // width > 1800px?
         font-size: 75%; // 1rem = 12px, 12/16 = 75%
     }
 }
@@ -32,7 +33,12 @@ html {
 body {
     position: relative;
     box-sizing: border-box;
+    padding: 3rem;
     overflow-x: hidden;
+
+    @include respond(tab-port) {
+        padding: 0;
+    }
 }
 
 img {

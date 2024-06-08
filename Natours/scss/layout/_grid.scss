@@ -5,18 +5,36 @@
 
     &:not(:last-child) {
         margin-block-end: var(--grid-gutter-v);
+
+        @include respond(tab-port) {
+            margin-block-end: var(--grid-gutter-v-sm);
+        }
     }
 
     @include clearfix;
+
+    @include respond(tab-port) {
+        max-inline-size: 50rem;
+        padding-inline: 3rem;
+    }
 }
 
 /* grid | col */
 [class^='col-'] {
     float: inline-start;
-}
 
-[class^='col-']:not(:last-child) {
-    margin-inline-end: var(--grid-gutter-h);
+    &:not(:last-child) {
+        margin-inline-end: var(--grid-gutter-h);
+
+        @include respond(tab-port) {
+            margin-block-end: var(--grid-gutter-v-sm);
+            margin-inline-end: 0;
+        }
+    }
+
+    @include respond(tab-port) {
+        inline-size: 100% !important;
+    }
 }
 
 /* col-1-of-2 */
