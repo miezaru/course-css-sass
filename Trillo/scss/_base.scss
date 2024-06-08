@@ -1,0 +1,61 @@
+/*
+COLORS
+
+Primary: hsl(343deg 82% 55%)
+Primary light:hsl(345deg 100% 60%)
+Primary dark: hsl(338deg 66% 44%)
+
+Grey light 1: hsl(0deg 9% 98%)
+Grey light 2: hsl(0deg 8% 95%)
+Grey light 3: hsl(0deg 6% 94%)
+Grey light 4: hsl(0deg 0% 80%)
+
+Grey dark 1: hsl(0deg 0% 20%)
+Grey dark 2: hsl(0deg 0% 47%)
+Grey dark 3: hsl(0deg 0% 60%)
+
+*/
+
+:root {
+    --cl-primary: hsl(343deg 82% 55%);
+    --cl-primary-light: hsl(345deg 100% 60%);
+    --cl-primary-dark: hsl(338deg 66% 44%);
+    --cl-grey-light-1: hsl(0deg 9% 98%);
+    --cl-grey-light-2: hsl(0deg 8% 95%);
+    --cl-grey-light-3: hsl(0deg 6% 94%);
+    --cl-grey-light-4: hsl(0deg 0% 80%);
+    --cl-grey-dark-1: hsl(0deg 0% 20%);
+    --cl-grey-dark-2: hsl(0deg 0% 47%);
+    --cl-grey-dark-3: hsl(0deg 0% 60%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    min-block-size: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--cl-grey-dark-2);
+    background-image: linear-gradient(
+        to right bottom,
+        var(--cl-primary-light),
+        var(--cl-primary-dark)
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
