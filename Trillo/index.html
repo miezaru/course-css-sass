@@ -22,7 +22,73 @@
     </head>
     <body>
         <div class="container">
-            <header class="header">Header part</header>
+            <header class="header">
+                <picture>
+                    <source type="image/avif" srcset="./img/logo/logo.avif">
+                    <source type="image/webp" srcset="./img/logo/logo.webp">
+                    <img
+                        class="logo"
+                        src="./img/logo/logo.png"
+                        alt="Trillo logo"
+                        type="image/png"
+                        height="106"
+                        width="153"
+                        srcset="./img/logo/logo.png"
+                    >
+                </picture>
+
+                <form class="search" action="#">
+                    <input
+                        class="search__input"
+                        type="text"
+                        placeholder="Search hotels"
+                    >
+                    <button class="search__button" type="submit">
+                        <svg class="search__icon" viewBox="0 0 20 20">
+                            <use
+                                xlink:href="./svg/sprite.svg#icon-magnifying-glass"
+                            ></use>
+                        </svg>
+                    </button>
+                </form>
+
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon" viewBox="0 0 20 20">
+                            <use
+                                xlink:href="./svg/sprite.svg#icon-bookmark"
+                            ></use>
+                            <span class="user-nav__notify">7</span>
+                        </svg>
+                        <svg class="user-nav__icon" viewBox="0 0 20 20">
+                            <use xlink:href="./svg/sprite.svg#icon-chat"></use>
+                            <span class="user-nav__notify">13</span>
+                        </svg>
+                    </div>
+                    <div class="user-nav__user">
+                        <picture>
+                            <source
+                                type="image/avif"
+                                srcset="./img/users/user.avif"
+                            >
+                            <source
+                                type="image/webp"
+                                srcset="./img/users/user.webp"
+                            >
+                            <img
+                                class="user-nav__user-photo"
+                                src="./img//users/user.jpg"
+                                alt="User photo"
+                                type="image/jpg"
+                                height="400"
+                                width="400"
+                                srcset="./img/users/user.jpg"
+                            >
+                        </picture>
+                        <span class="user-nav__user-name">Jonas</span>
+                    </div>
+                </nav>
+            </header>
             <div class="content">
                 <nav class="sidebar">Navigation</nav>
                 <main class="hotel-view">Hotel view</main>

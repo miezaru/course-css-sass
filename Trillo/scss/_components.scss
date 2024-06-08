@@ -1,0 +1,45 @@
+// logo
+.logo {
+    inline-size: 3.25rem;
+    block-size: auto;
+}
+
+// search
+.search {
+    &__input {
+    }
+
+    &__button {
+    }
+
+    &__icon {
+        inline-size: 2rem;
+        block-size: 2rem;
+    }
+}
+
+// user-nav
+.user-nav {
+    &__icon-box {
+    }
+
+    &__icon {
+        inline-size: 2.25rem;
+        block-size: 2.25rem;
+    }
+
+    &__notify {
+    }
+
+    &__user {
+    }
+
+    &__user-photo {
+        inline-size: auto;
+        block-size: 3.75rem;
+        border-radius: 50%;
+    }
+
+    &__user-name {
+    }
+}
