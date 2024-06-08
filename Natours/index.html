@@ -169,54 +169,95 @@
                     <div class="col-1-of-2">
                         <div class="composition">
                             <picture>
+                                <!-- sizes inform browser of different viewport width-s (vw) -->
                                 <source
                                     type="image/avif"
-                                    srcset="./img/nat/nat-1-large.avif"
+                                    sizes="(max-width: 65.25em) 16.6vw, (max-width: 37.5em) 25vw, 300px"
+                                    srcset="
+                                        ./img/nat/nat-1.avif        300w,
+                                        ./img/nat/nat-1-large.avif 1000w
+                                    "
                                 >
                                 <source
                                     type="image/webp"
-                                    srcset="./img/nat/nat-1-large.webp"
+                                    sizes="(max-width: 65.25em) 16.6vw, (max-width: 37.5em) 25vw, 300px"
+                                    srcset="
+                                        ./img/nat/nat-1.webp        300w,
+                                        ./img/nat/nat-1-large.webp 1000w
+                                    "
                                 >
+                                <!-- always include src if srcset not supported by the browser -->
                                 <img
                                     class="composition__photo composition__photo--p1"
-                                    src="./img/nat/nat-1-large.jpg"
+                                    src="./img/nat/nat-1.jpg"
                                     alt="A landscape depicting a mountain, a river and many trees"
                                     height="667"
                                     width="1000"
+                                    sizes="(max-width: 65.25em) 16.6vw, (max-width: 37.5em) 25vw, 300px"
+                                    srcset="
+                                        ./img/nat/nat-1.jpg        300w,
+                                        ./img/nat/nat-1-large.jpg 1000w
+                                    "
                                 >
                             </picture>
                             <picture>
                                 <source
                                     type="image/avif"
-                                    srcset="./img/nat/nat-2-large.avif"
+                                    sizes="(max-width: 65.25em) 16.6vw, (max-width: 37.5em) 25vw, 300px"
+                                    srcset="
+                                        ./img/nat/nat-2.avif        300w,
+                                        ./img/nat/nat-2-large.avif 1000w
+                                    "
                                 >
                                 <source
                                     type="image/webp"
-                                    srcset="./img/nat/nat-2-large.webp"
+                                    sizes="(max-width: 65.25em) 16.6vw, (max-width: 37.5em) 25vw, 300px"
+                                    srcset="
+                                        ./img/nat/nat-2.webp        300w,
+                                        ./img/nat/nat-2-large.webp 1000w
+                                    "
                                 >
                                 <img
                                     class="composition__photo composition__photo--p2"
-                                    src="./img/nat/nat-2-large.jpg"
-                                    alt="A cyclist travelling on a road"
+                                    src="./img/nat/nat-2.jpg"
+                                    alt="A landscape depicting a mountain, a river and many trees"
                                     height="664"
                                     width="1000"
+                                    sizes="(max-width: 65.25em) 16.6vw, (max-width: 37.5em) 25vw, 300px"
+                                    srcset="
+                                        ./img/nat/nat-2.jpg        300w,
+                                        ./img/nat/nat-2-large.jpg 1000w
+                                    "
                                 >
                             </picture>
                             <picture>
                                 <source
                                     type="image/avif"
-                                    srcset="./img/nat/nat-3-large.avif"
+                                    sizes="(max-width: 65.25em) 16.6vw, (max-width: 37.5em) 25vw, 300px"
+                                    srcset="
+                                        ./img/nat/nat-3.avif        300w,
+                                        ./img/nat/nat-3-large.avif 1000w
+                                    "
                                 >
                                 <source
                                     type="image/webp"
-                                    srcset="./img/nat/nat-3-large.webp"
+                                    sizes="(max-width: 65.25em) 16.6vw, (max-width: 37.5em) 25vw, 300px"
+                                    srcset="
+                                        ./img/nat/nat-3.webp        300w,
+                                        ./img/nat/nat-3-large.webp 1000w
+                                    "
                                 >
                                 <img
                                     class="composition__photo composition__photo--p3"
-                                    src="./img/nat/nat-3-large.jpg"
-                                    alt="A human walking on top of a mountain"
+                                    src="./img/nat/nat-3.jpg"
+                                    alt="A landscape depicting a mountain, a river and many trees"
                                     height="667"
                                     width="1000"
+                                    sizes="(max-width: 65.25em) 16.6vw, (max-width: 37.5em) 25vw, 300px"
+                                    srcset="
+                                        ./img/nat/nat-3.jpg        300w,
+                                        ./img/nat/nat-3-large.jpg 1000w
+                                    "
                                 >
                             </picture>
                         </div>
@@ -607,18 +648,51 @@
                 <picture>
                     <source
                         type="image/avif"
-                        srcset="./img/logo/logo-green-2x.avif"
+                        media="(max-width: 37.5em)"
+                        srcset="
+                            ./img/logo/logo-green-small-1x.avif 1x,
+                            ./img/logo/logo-green-small-2x.avif 2x
+                        "
+                    >
+                    <source
+                        type="image/avif"
+                        srcset="
+                            ./img/logo/logo-green-1x.avif 1x,
+                            ./img/logo/logo-green-2x.avif 2x
+                        "
                     >
                     <source
                         type="image/webp"
-                        srcset="./img/logo/logo-green-2x.webp"
+                        media="(max-width: 37.5em)"
+                        srcset="
+                            ./img/logo/logo-green-small-1x.webp 1x,
+                            ./img/logo/logo-green-small-2x.webp 2x
+                        "
+                    >
+                    <source
+                        type="image/webp"
+                        srcset="
+                            ./img/logo/logo-green-1x.webp 1x,
+                            ./img/logo/logo-green-2x.webp 2x
+                        "
+                    >
+                    <source
+                        media="(max-width: 37.5em)"
+                        srcset="
+                            ./img/logo/logo-green-small-1x.png 1x,
+                            ./img/logo/logo-green-small-2x.png 2x
+                        "
                     >
                     <img
                         class="footer__logo"
-                        src="./img/logo/logo-green-2x.jpg"
+                        src="./img/logo/logo-green-1x.png"
                         alt="Full logo"
                         height="238"
                         width="300"
+                        srcset="
+                            ./img/logo/logo-green-1x.png 1x,
+                            ./img/logo/logo-green-2x.png 2x
+                        "
                     >
                 </picture>
             </div>
@@ -692,7 +766,7 @@
                             class="popup__img"
                             src="./img/nat/nat-9.jpg"
                             alt="Tour photo"
-                            height="1333"
+                            height="1376"
                             width="2000"
                         >
                     </picture>
