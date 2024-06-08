@@ -2,7 +2,7 @@
 .logo {
     inline-size: 3.25rem;
     block-size: auto;
-    margin-inline-start: 3rem;
+    margin-inline-start: 2rem;
 }
 
 // search
@@ -68,28 +68,51 @@
 
 // user-nav
 .user-nav {
-    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+
+    & > * {
+        display: flex;
+        align-items: center;
+        block-size: 100%;
+        padding-inline: 2rem;
+        cursor: pointer;
+    }
+
+    & > *:hover {
+        background-color: var(--cl-grey-light-2);
+    }
 
     &__icon-box {
+        position: relative;
     }
 
     &__icon {
         inline-size: 2.25rem;
         block-size: 2.25rem;
+        fill: var(-cl-grey-dark-2);
     }
 
     &__notify {
-    }
-
-    &__user {
+        position: absolute;
+        inset-block-start: 1.5rem;
+        inset-inline-end: 1.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        inline-size: 1.75rem;
+        block-size: 1.75rem;
+        font-size: 0.8rem;
+        color: var(--cl-white);
+        background-color: var(--cl-primary);
+        border-radius: 50%;
     }
 
     &__user-photo {
         inline-size: auto;
         block-size: 3.75rem;
+        margin-inline-end: 1rem;
         border-radius: 50%;
-    }
-
-    &__user-name {
     }
 }
