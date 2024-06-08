@@ -10,19 +10,44 @@
         box-shadow: var(--sh-photo);
         transition: all 0.2s;
 
+        @include respond(tab-port) {
+            position: relative;
+            float: inline-start;
+            inline-size: 33.3333%;
+            outline-offset: 1rem;
+            box-shadow: var(--sh-photo-tab-port);
+        }
+
         &--p1 {
             inset-block-start: -2rem;
             inset-inline-start: 0;
+
+            @include respond(tab-port) {
+                inset-block-start: 0;
+                transform: scale(1.2);
+            }
         }
 
         &--p2 {
             inset-block-start: 2rem;
             inset-inline-end: 0;
+
+            @include respond(tab-port) {
+                inset-block-start: -1rem;
+                z-index: 11;
+                transform: scale(1.3);
+            }
         }
 
         &--p3 {
             inset-block-start: 10rem;
             inset-inline-start: 20%;
+
+            @include respond(tab-port) {
+                inset-block-start: 1rem;
+                inset-inline-start: 0;
+                transform: scale(1.1);
+            }
         }
 
         &:hover {
@@ -30,10 +55,19 @@
             outline: 1.5rem solid var(--cl-primary-m);
             box-shadow: var(--sh-photo-hover);
             transform: scale(1.05) translateY(-0.5rem);
+
+            @include respond(tab-port) {
+                outline: 1rem solid var(--cl-primary-m);
+                transform: scale(1.4) translateY(-0.5rem);
+            }
         }
     }
 
     &:hover &__photo:not(:hover) {
         transform: scale(0.95);
+
+        @include respond(tab-port) {
+            transform: scale(1);
+        }
     }
 }

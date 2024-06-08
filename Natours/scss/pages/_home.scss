@@ -2,6 +2,10 @@
     padding-block: 26rem 39rem;
     margin-block-start: -20vh;
     background-color: var(--cl-grey-l-1);
+
+    @include respond(tab-port) {
+        padding-block: 21rem 34rem;
+    }
 }
 
 .section-features {
@@ -21,6 +25,10 @@
     background-size: cover;
     transform: skewY(-7deg);
 
+    @include respond(tab-port) {
+        padding-block: 10rem;
+    }
+
     & > * {
         transform: skewY(7deg);
     }
@@ -30,11 +38,19 @@
     padding-block: 38rem 15rem;
     margin-block-start: -20rem;
     background-color: var(--cl-grey-l-1);
+
+    @include respond(tab-port) {
+        padding-block: 30rem 10rem;
+    }
 }
 
 .section-stories {
     position: relative;
-    padding: 15rem;
+    padding-block: 15rem;
+
+    @include respond(tab-port) {
+        padding-block: 10rem;
+    }
 }
 
 .section-book {
@@ -44,10 +60,13 @@
         var(--cl-primary-l),
         var(--cl-primary-d)
     );
+
+    @include respond(tab-port) {
+        padding-block: 10rem;
+    }
 }
 
 .book {
-    block-size: 50rem;
     background-image: linear-gradient(
             105deg,
             var(--cl-bcg-white-3) 0%,

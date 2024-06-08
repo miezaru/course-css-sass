@@ -7,6 +7,10 @@
     box-shadow: var(--sh-box);
     transition: transform 0.3s;
 
+    @include respond(tab-port) {
+        padding: 2rem;
+    }
+
     &__icon {
         display: inline-block;
         margin-block-end: 0.5rem;
@@ -18,6 +22,10 @@
             var(--cl-primary-d)
         );
         background-clip: text;
+
+        @include respond(tab-port) {
+            margin-block-end: 0;
+        }
     }
 
     &:hover {
