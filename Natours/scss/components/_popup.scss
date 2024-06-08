@@ -10,6 +10,13 @@
     opacity: 0;
     transition: all 0.3s;
 
+    @supports (
+        (backdrop-filter: blur(3px)) or (-webkit-backdrop-filer: blur(3px))
+    ) {
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+    }
+
     &__content {
         position: absolute;
         inset-block-start: 50%;

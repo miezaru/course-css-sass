@@ -23,12 +23,17 @@
     &__shape {
         position: relative;
         float: inline-start;
-        inline-size: 15rem;
-        block-size: 15rem;
         overflow: hidden;
-        clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg);
         shape-outside: circle(50% at 50% 50%);
+
+        @supports (
+            (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0, 0))
+        ) {
+            inline-size: 15rem;
+            block-size: 15rem;
+            clip-path: circle(50% at 50% 50%);
+        }
 
         @include respond(phone) {
             display: block;

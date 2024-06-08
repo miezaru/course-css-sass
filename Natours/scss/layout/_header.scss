@@ -1,10 +1,8 @@
+/* stylelint-disable media-feature-name-no-vendor-prefix */
 /* header */
 .header {
     position: relative;
-    block-size: 95vh;
-
-    /* property creates a clipping region */
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    block-size: 85vh;
     background-image: linear-gradient(
             to right bottom,
             var(--cl-gradient-pr-l),
@@ -18,7 +16,17 @@
     background-position: top;
     background-size: cover;
 
+    @supports (
+        (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0, 0))
+    ) {
+        block-size: 95vh;
+
+        /* property creates a clipping region */
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    }
+
     @media (min-resolution: 192dpi) and (min-width: 37.5em),
+        (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
         (min-width: 125em) {
         background-image: linear-gradient(
                 to right bottom,
