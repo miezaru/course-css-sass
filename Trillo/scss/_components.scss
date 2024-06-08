@@ -2,24 +2,74 @@
 .logo {
     inline-size: 3.25rem;
     block-size: auto;
+    margin-inline-start: 3rem;
 }
 
 // search
 .search {
+    display: flex;
+    flex: 0 0 40%;
+    align-items: center;
+    justify-content: center;
+
     &__input {
+        inline-size: 90%;
+        padding-block: 0.7rem;
+        padding-inline: 2rem;
+        margin-inline-end: -3.25rem;
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: var(--cl-grey-light-2);
+        border: none;
+        border-radius: 100px;
+        transition: all 0.2s;
+
+        &:focus {
+            inline-size: 100%;
+            background-color: var(--cl-grey-light-3);
+            outline: none;
+        }
+
+        &::placeholder {
+            font-weight: 100;
+            color: var(--cl-grey-light-4);
+        }
     }
 
     &__button {
+        background-color: var(--cl-grey-light-2);
+        border: none;
+        transition: all 0.2s;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            transform: translateY(-2px);
+        }
+    }
+
+    &__input:focus + &__button {
+        background-color: var(--cl-grey-light-3);
+    }
+
+    &:focus-within &__input {
+        inline-size: 100%;
     }
 
     &__icon {
         inline-size: 2rem;
         block-size: 2rem;
+        fill: var(--cl-grey-dark-3);
     }
 }
 
 // user-nav
 .user-nav {
+    background-color: greenyellow;
+
     &__icon-box {
     }
 
