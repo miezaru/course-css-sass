@@ -9,6 +9,17 @@
     box-shadow: var(--sh-story-box);
     transform: skewX(-12deg);
 
+    @include respond(tab-port) {
+        inline-size: 100%;
+        padding: 4rem;
+        padding-inline-start: 7rem;
+    }
+
+    @include respond(phone) {
+        padding-inline-start: 4rem;
+        transform: skewX(0);
+    }
+
     &__shape {
         position: relative;
         float: inline-start;
@@ -18,6 +29,14 @@
         clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg);
         shape-outside: circle(50% at 50% 50%);
+
+        @include respond(phone) {
+            display: block;
+            float: none;
+            margin-block-end: 2rem;
+            margin-inline: auto;
+            transform: translateX(0) skewX(0);
+        }
     }
 
     &__img {
@@ -36,6 +55,16 @@
 
     &__text {
         transform: skew(12deg);
+
+        @include respond(phone) {
+            transform: skewX(0);
+        }
+
+        & h3 {
+            @include respond(phone) {
+                text-align: center;
+            }
+        }
     }
 
     &__caption {

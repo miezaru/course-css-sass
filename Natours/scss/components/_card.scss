@@ -200,4 +200,68 @@
     &:focus-within &__side--back {
         transform: rotateY(0);
     }
+
+    @include respond(tab-port) {
+        block-size: auto;
+        background-color: var(--cl-white);
+        border-radius: var(--border-radius-box);
+        box-shadow: var(--sh-box);
+
+        &__side {
+            position: relative;
+            inline-size: 100%;
+            block-size: auto;
+            box-shadow: none;
+
+            &--back {
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+                border-start-start-radius: 0;
+                border-start-end-radius: 0;
+                transform: rotateY(0);
+            }
+        }
+
+        &:hover &__side--front {
+            transform: rotateY(0);
+        }
+
+        &:hover &__side--back {
+            transform: rotateY(0);
+        }
+
+        // card | front styling
+
+        &__details {
+            padding-block: 1rem;
+            padding-inline: 3rem;
+        }
+
+        // card | back styling
+        &__cta {
+            position: relative;
+            inset-block-start: 0;
+            inset-inline-start: 0;
+            inline-size: 100%;
+            padding-block: 7rem 4rem;
+            padding-inline: 4rem;
+            transform: translate(0);
+        }
+
+        &__price-box {
+            margin-block-end: 3rem;
+        }
+
+        &__price-value {
+            font-size: 4rem;
+        }
+
+        // focus
+        &:focus-within &__side--front {
+            transform: rotateY(0);
+        }
+
+        &:focus-within &__side--back {
+            transform: rotateY(0);
+        }
+    }
 }

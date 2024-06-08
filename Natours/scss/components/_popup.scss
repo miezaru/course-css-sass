@@ -23,6 +23,10 @@
         opacity: 0;
         transition: all 0.5s 0.25s;
         transform: translate(-50%, -50%) scale(0.5);
+
+        @include respond(tab-land) {
+            inline-size: 90%;
+        }
     }
 
     &__left {
@@ -30,6 +34,11 @@
         // float: inline-start;
         inline-size: 33.3333%;
         vertical-align: middle;
+
+        @include respond(tab-land) {
+            display: block;
+            inline-size: 100%;
+        }
     }
 
     &__right {
@@ -39,11 +48,24 @@
         padding-block: 3rem;
         padding-inline: 5rem;
         vertical-align: middle;
+
+        @include respond(tab-land) {
+            display: block;
+            inline-size: 100%;
+        }
+
+        @include respond(phone) {
+            padding-inline: 3rem;
+        }
     }
 
     &__img {
         display: block;
         inline-size: 100%;
+
+        @include respond(tab-land) {
+            display: none;
+        }
     }
 
     &__text {
@@ -53,6 +75,10 @@
         column-count: 2;
         column-rule: 1px solid var(--cl-grey-l-2);
         hyphens: auto;
+
+        @include respond(phone) {
+            column-count: 1;
+        }
     }
 
     // popup | close

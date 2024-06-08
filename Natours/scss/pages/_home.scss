@@ -80,13 +80,53 @@
         );
     background-repeat: no-repeat;
     background-size: cover;
-    // cover = 100%
+    // cover = 100% in X direction
     background-size: 100%;
     border-radius: var(--border-radius-box);
     box-shadow: var(--sh-box-d);
 
+    @include respond(tab-land) {
+        background-image: linear-gradient(
+                105deg,
+                var(--cl-bcg-white-3) 0%,
+                var(--cl-bcg-white-3) 65%,
+                transparent 65%
+            ),
+            image-set(
+                url('../../img/nat/nat-10.avif') type('image/avif'),
+                url('../../img/nat/nat-10.webp') type('image/webp'),
+                url('../../img/nat/nat-10.jpg')
+            );
+        background-size: cover;
+    }
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(
+                to right,
+                var(--cl-bcg-white-3) 0%,
+                var(--cl-bcg-white-3) 100%
+            ),
+            image-set(
+                url('../../img/nat/nat-10.avif') type('image/avif'),
+                url('../../img/nat/nat-10.webp') type('image/webp'),
+                url('../../img/nat/nat-10.jpg')
+            );
+    }
+
     &__form {
         inline-size: 50%;
         padding: 6rem;
+
+        @include respond(tab-land) {
+            inline-size: 65%;
+        }
+
+        @include respond(tab-port) {
+            inline-size: 100%;
+        }
+
+        @include respond(phone) {
+            padding: 3.5rem;
+        }
     }
 }
