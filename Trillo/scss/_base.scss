@@ -17,6 +17,7 @@ Grey dark 3: hsl(0deg 0% 60%)
 */
 
 :root {
+    --cl-white: hsl(0deg 0% 100%);
     --cl-primary: hsl(343deg 82% 55%);
     --cl-primary-light: hsl(345deg 100% 60%);
     --cl-primary-dark: hsl(338deg 66% 44%);
@@ -27,6 +28,9 @@ Grey dark 3: hsl(0deg 0% 60%)
     --cl-grey-dark-1: hsl(0deg 0% 20%);
     --cl-grey-dark-2: hsl(0deg 0% 47%);
     --cl-grey-dark-3: hsl(0deg 0% 60%);
+
+    // shadow
+    --sh-dark: 0 2rem 6rem hsla(0deg 0% 0% / 30%);
 }
 
 * {
