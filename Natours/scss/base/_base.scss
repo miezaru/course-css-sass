@@ -45,3 +45,8 @@ img {
     max-inline-size: 100%;
     block-size: auto;
 }
+
+::selection {
+    color: var(--cl-white);
+    background-color: var(--cl-primary-m);
+}
