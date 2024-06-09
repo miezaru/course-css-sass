@@ -189,3 +189,46 @@
     color: var(--cl-grey-light-4);
     text-align: center;
 }
+
+// gallery
+.gallery {
+    display: flex;
+
+    &__photo {
+        display: block;
+        inline-size: 100%;
+        block-size: auto;
+    }
+}
+
+// overview
+.overview {
+    display: flex;
+    align-items: center;
+
+    &__heading {
+    }
+
+    &__stars {
+        margin-inline-end: auto;
+    }
+
+    &__icon-star,
+    &__icon-location {
+        inline-size: 1.75rem;
+        block-size: 1.75rem;
+        fill: var(--cl-primary);
+    }
+
+    &__location {
+    }
+
+    &__rating {
+    }
+
+    &__rating-count {
+    }
+
+    &__rating-average {
+    }
+}
