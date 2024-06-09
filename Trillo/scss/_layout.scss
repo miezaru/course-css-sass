@@ -24,6 +24,12 @@
     font-size: 1.4rem;
     background-color: var(--cl-white);
     border-block-end: var(--line);
+
+    @media only screen and (max-width: $bp-smallest) {
+        flex-wrap: wrap;
+        align-content: space-around;
+        block-size: 11rem;
+    }
 }
 
 .content {
@@ -57,6 +63,10 @@
     @media only screen and (max-width: $bp-medium) {
         padding: 3rem;
     }
+
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+    }
 }
 
 .description {
@@ -69,6 +79,11 @@
     @media only screen and (max-width: $bp-medium) {
         padding: 2rem;
         margin-inline-end: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        margin-block-end: 3rem;
+        margin-inline-end: 0;
     }
 }
 
