@@ -312,3 +312,72 @@
         transform: scale(1);
     }
 }
+
+// paragraph
+.paragraph:not(:last-of-type) {
+    margin-block-end: 2rem;
+}
+
+// list
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-block: 3rem;
+    margin-block: 3rem;
+    list-style: none;
+    border-block-start: var(--line);
+    border-block-end: var(--line);
+
+    &__item {
+        display: flex;
+        flex: 0 0 50%;
+        align-items: center;
+        margin-block-end: 0.7rem;
+    }
+
+    &__item::before {
+        display: inline-block;
+        inline-size: 1rem;
+        block-size: 1rem;
+        margin-inline-end: 0.7rem;
+        content: '';
+
+        // older browsers
+        // background-image: url('../../svg/chevron-thin-right.svg');
+        // background-size: cover;
+
+        // newer brosers - masks
+        background-color: var(--cl-primary);
+        mask-image: url('../../svg/chevron-thin-right.svg');
+        mask-size: cover;
+    }
+}
+
+// recommend
+.recommend {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    color: var(--cl-grey-dark-3);
+
+    &__count {
+        margin-inline-end: auto;
+    }
+
+    &__friends {
+    }
+
+    &__photo-box {
+        &:not(:last-child) {
+            margin-inline-end: -1.5rem;
+        }
+    }
+
+    &__photo {
+        box-sizing: content-box;
+        inline-size: 4rem;
+        block-size: 4rem;
+        border: 3px solid var(--cl-white);
+        border-radius: 50%;
+    }
+}
