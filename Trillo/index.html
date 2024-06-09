@@ -242,8 +242,36 @@
                             <svg
                                 class="overview__icon-star"
                                 viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"
                             >
+                                <lineargradient
+                                    id="gradient"
+                                    x1="0"
+                                    x2="80%"
+                                    y1="100%"
+                                    y2="100%"
+                                >
+                                    <stop
+                                        offset="0"
+                                        stop-color="var(--cl-primary)"
+                                    />
+
+                                    <stop
+                                        offset="50%"
+                                        stop-color="var(--cl-primary)"
+                                    />
+
+                                    <stop
+                                        offset="70%"
+                                        stop-color="var(--cl-grey-light-2)"
+                                    />
+                                    <stop
+                                        offset="100%"
+                                        stop-color="var(--cl-grey-light-2)"
+                                    />
+                                </lineargradient>
                                 <use
+                                    fill="url(#gradient)"
                                     xlink:href="./svg/sprite.svg#icon-star"
                                 ></use>
                             </svg>
