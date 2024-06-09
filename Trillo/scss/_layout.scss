@@ -5,6 +5,15 @@
     margin-inline: auto;
     background-color: var(--cl-grey-light-1);
     box-shadow: var(--sh-dark);
+
+    @media only screen and (max-width: $bp-largest) {
+        margin: 0;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        inline-size: 100%;
+        max-inline-size: 100%;
+    }
 }
 
 .header {
@@ -19,6 +28,10 @@
 
 .content {
     display: flex;
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+    }
 }
 
 .sidebar {
@@ -40,6 +53,10 @@
     font-size: 1.4rem;
     background-color: var(--cl-grey-light-1);
     border-block-end: var(--line);
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 3rem;
+    }
 }
 
 .description {
@@ -48,6 +65,11 @@
     margin-inline-end: 4.5rem;
     background-color: var(--cl-white);
     box-shadow: var(--sh-light);
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2rem;
+        margin-inline-end: 3rem;
+    }
 }
 
 .user-reviews {

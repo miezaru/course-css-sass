@@ -123,11 +123,24 @@
     font-size: 1.4rem;
     list-style: none;
 
+    @media only screen and (max-width: $bp-medium) {
+        display: flex;
+        margin: 0;
+    }
+
     &__item {
         position: relative;
 
         &:not(:last-child) {
             margin-block-end: 0.5rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin-block-end: 0;
+            }
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            flex: 1;
         }
     }
 
@@ -171,6 +184,11 @@
             color: var(--cl-grey-light-1);
             text-decoration: none;
             text-transform: uppercase;
+
+            @media only screen and (max-width: $bp-medium) {
+                justify-content: center;
+                padding: 2rem;
+            }
         }
     }
 
@@ -188,6 +206,10 @@
     font-size: 1.2rem;
     color: var(--cl-grey-light-4);
     text-align: center;
+
+    @media only screen and (max-width: $bp-medium) {
+        display: none;
+    }
 }
 
 // gallery
@@ -362,8 +384,12 @@
 
     &__photo-box {
         &:not(:last-child) {
-            margin-inline-end: -1.5rem;
+            margin-inline-end: -2rem;
         }
+    }
+
+    &__friends {
+        display: flex;
     }
 
     &__photo {
@@ -383,6 +409,11 @@
     overflow: hidden;
     background-color: var(--cl-white);
     box-shadow: var(--sh-light);
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2rem;
+        margin-block-end: 3rem;
+    }
 
     &::before {
         position: absolute;
@@ -448,6 +479,10 @@
     flex: 1;
     padding-block: 3.5rem;
     text-align: center;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding-block: 2.5rem;
+    }
 
     &__book-now {
         margin-block-end: 2.5rem;

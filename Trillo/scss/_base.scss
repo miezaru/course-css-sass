@@ -38,6 +38,11 @@ Grey dark 3: hsl(0deg 0% 60%)
     --line: 1px solid var(--cl-grey-light-2);
 }
 
+// responsive variables
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+
 * {
     padding: 0;
     margin: 0;
@@ -52,6 +57,10 @@ Grey dark 3: hsl(0deg 0% 60%)
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
 }
 
 body {
