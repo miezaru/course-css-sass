@@ -1,4 +1,11 @@
 .section-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-column: center-start / center-end;
-    background-color: var(--cl-grey-light-2);
+    grid-gap: 6rem;
+    gap: 6rem;
+    margin-block: 15rem;
+}
+
+.feature {
 }
