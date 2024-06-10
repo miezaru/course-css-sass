@@ -158,21 +158,33 @@
                 grid-template-rows: repeat(2, 150px);
                 grid-template-columns: repeat(2, 1fr);
 
+                /* grid | aligning grid tracks to grid container (change grid-template-columns) */
+                grid-template-columns: repeat(2, 150px);
+
                 /* implicid grid rows height */
                 grid-auto-rows: 80px;
                 grid-auto-columns: 0.5fr;
 
                 /* where add new items in rows|columns */
                 grid-auto-flow: column;
-                grid-auto-flow: row;
+
+                /* dense - not following default order, and place items in empty cells */
+                grid-auto-flow: row dense;
 
                 /* grid | gap */
                 gap: 2rem;
 
-                /* grid | aligning */
+                /* grid | aligning grid tracks to grid container */
+                /* default stretch, place-content: align-content justify-content */
+                place-content: center center;
+
+                /* grid | aligning grid items to grid areas */
                 /* default stretch, place-items: align-items justify-items */
-                place-items: center center;
+                place-items: stretch stretch;
+
+                /* other styles */
                 inline-size: 100rem;
+                block-size: 100rem;
                 margin-block: 2rem;
                 margin-inline: auto;
                 background-color: hsl(0deg 0% 87%);
@@ -182,7 +194,11 @@
                 grid-row: 2 / span 3;
 
                 /* place-self: align-self justify-self */
-                place-self: stretch stretch;
+                /* place-self: start start; */
+            }
+
+            .item--16 {
+                grid-row: 2 / span 2;
             }
 
             .item--17 {
@@ -201,7 +217,10 @@
             <div class="item item--6">6: Brown</div>
         </div>
 
-        <h2>Implicit grids vs Explicit grids</h2>
+        <h2>
+            Implicit grids vs Explicit grids and aligning grid items and grid
+            tracks
+        </h2>
         <div class="container-2">
             <div class="item item--11">11: Orange</div>
             <div class="item item--12">12: Green</div>
