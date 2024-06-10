@@ -9,9 +9,16 @@
     --cl-grey-dark-1: hsl(32deg 18% 28%);
     --cl-grey-dark-2: hsl(32deg 18% 36%);
 
+    // gradients
+    --gr-primary-50: hsla(33deg 46% 58% / 50%);
+
     // font
     --font-primary: 'Nunito', sans-serif;
     --font-display: 'Josefin Sans', sans-serif;
+
+    // shadow
+    --sh-photo-light: 0 2rem 5rem hsla(0deg 0% 0% / 10%);
+    --sh-photo-dark: 0 2rem 5rem hsla(0deg 0% 0% / 20%);
 }
 
 *,
@@ -32,6 +39,11 @@ body {
     font-weight: 300;
     line-height: 1.6;
     color: var(--cl-grey-dark-2);
+}
+
+picture {
+    max-inline-size: 100%;
+    block-size: auto;
 }
 
 .container {
