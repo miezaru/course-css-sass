@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Grid | Challenge</title>
+
+        <style>
+            /* base */
+            *,
+            *::before,
+            *::after {
+                box-sizing: inherit;
+                padding: 0;
+                margin: 0;
+            }
+
+            html {
+                font-size: 62.5%;
+            }
+
+            body {
+                box-sizing: border-box;
+                font-family: sans-serif;
+                font-size: 2.4rem;
+                font-weight: 700;
+                line-height: 1.4;
+                color: hsl(0deg 0% 100%);
+            }
+
+            /* grid | challenge */
+            .container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr) 18rem;
+                gap: 2rem;
+                inline-size: 100rem;
+                margin-block: 2rem;
+                margin-inline: auto;
+            }
+
+            .container > * {
+                padding: 1rem;
+                background-color: blueviolet;
+            }
+
+            .header {
+                grid-column: 1 / -1;
+                block-size: 8rem;
+            }
+
+            .box {
+                block-size: 15rem;
+            }
+
+            .sidebar {
+                grid-row: 2 / 4;
+                grid-column: 4;
+            }
+
+            .main {
+                grid-column: 1 / 4;
+                block-size: 30rem;
+            }
+
+            .footer {
+                grid-column: 1 / -1;
+                block-size: 8rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">Header</header>
+            <div class="box box--1">Small box 1</div>
+            <div class="box box--2">Small box 2</div>
+            <div class="box box--3">Small box 3</div>
+            <aside class="sidebar">Sidebar</aside>
+            <main class="main">Main content</main>
+            <footer class="footer">Footer</footer>
+        </div>
+    </body>
+</html>
