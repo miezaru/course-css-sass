@@ -100,7 +100,7 @@
             }
 
             .item {
-                padding: 2rem;
+                padding: 1rem;
             }
 
             .item--1 {
@@ -163,15 +163,30 @@
                 grid-auto-columns: 0.5fr;
 
                 /* where add new items in rows|columns */
-                grid-auto-flow: row;
                 grid-auto-flow: column;
+                grid-auto-flow: row;
 
                 /* grid | gap */
                 gap: 2rem;
+
+                /* grid | aligning */
+                /* default stretch, place-items: align-items justify-items */
+                place-items: center center;
                 inline-size: 100rem;
                 margin-block: 2rem;
                 margin-inline: auto;
                 background-color: hsl(0deg 0% 87%);
+            }
+
+            .item--14 {
+                grid-row: 2 / span 3;
+
+                /* place-self: align-self justify-self */
+                place-self: stretch stretch;
+            }
+
+            .item--17 {
+                grid-column: 1 / -1;
             }
         </style>
     </head>
