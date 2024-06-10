@@ -1,4 +1,36 @@
 .section-homes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-column: center-start / center-end;
-    background-color: var(--cl-secondary);
+    gap: 7rem;
+    margin-block: 15rem;
+}
+
+.home {
+    background-color: var(--cl-grey-light-1);
+
+    &__img {
+        display: block;
+        inline-size: 100%;
+    }
+
+    &__like {
+    }
+
+    &__name {
+    }
+
+    &__location,
+    &__rooms,
+    &__area,
+    &__price {
+        svg {
+            inline-size: 2rem;
+            block-size: 2rem;
+            fill: var(--cl-primary);
+        }
+
+        p {
+        }
+    }
 }
