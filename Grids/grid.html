@@ -38,40 +38,48 @@
             }
 
             .item--1,
-            .item--11 {
+            .item--11,
+            .item--21 {
                 background-color: orangered;
             }
 
             .item--2,
-            .item--12 {
+            .item--12,
+            .item--22 {
                 background-color: greenyellow;
             }
 
             .item--3,
-            .item--13 {
+            .item--13,
+            .item--23 {
                 background-color: blueviolet;
             }
 
             .item--4,
-            .item--14 {
+            .item--14,
+            .item--24 {
                 background-color: palevioletred;
             }
 
             .item--5,
-            .item--15 {
+            .item--15,
+            .item--25 {
                 background-color: royalblue;
             }
 
             .item--6,
-            .item--16 {
+            .item--16,
+            .item--26 {
                 background-color: goldenrod;
             }
 
-            .item--17 {
+            .item--17,
+            .item--27 {
                 background-color: aqua;
             }
 
-            .item--18 {
+            .item--18,
+            .item--28 {
                 background-color: sienna;
             }
 
@@ -204,6 +212,26 @@
             .item--17 {
                 grid-column: 1 / -1;
             }
+
+            /* grid | using min-content, max-content and minmax() function */
+            .container-3 {
+                display: grid;
+                grid-template-rows: repeat(2, min-content);
+                grid-template-rows: 150px min-content;
+                grid-template-rows: repeat(2, minmax(150px, min-content));
+
+                /* max-content - largest content */
+                /* 1fr - never small then minimum content */
+                grid-template-columns: max-content 1fr 1fr min-content;
+                grid-template-columns: minmax(200px, 1fr) repeat(3, 1fr);
+                inline-size: 100rem;
+
+                /* using min-max with % width */
+                inline-size: 90%;
+                margin-block: 2rem;
+                margin-inline: auto;
+                background-color: var(--bcg-grey);
+            }
         </style>
     </head>
     <body>
@@ -218,8 +246,9 @@
         </div>
 
         <h2>
-            Implicit grids vs Explicit grids and aligning grid items and grid
-            tracks
+            Implicit grids vs Explicit grids,<br>
+            aligning grid items and grid tracks,<br>
+            dense keyword
         </h2>
         <div class="container-2">
             <div class="item item--11">11: Orange</div>
@@ -230,6 +259,20 @@
             <div class="item item--16">16: Brown</div>
             <div class="item item--17">17: Aqua</div>
             <div class="item item--18">18: Sienna</div>
+        </div>
+        <h2>Using min-content, max-content and minmax() function</h2>
+        <div class="container-3">
+            <div class="item item--21">21: Orange</div>
+            <div class="item item--22">22: Green</div>
+            <div class="item item--23">23: Violet</div>
+            <div class="item item--24">24: Pink</div>
+            <div class="item item--25">25: Blue</div>
+            <div class="item item--26">26: Brown</div>
+            <div class="item item--27">27: Aqua</div>
+            <div class="item item--28">
+                28: Sienna Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+            </div>
         </div>
     </body>
 </html>
