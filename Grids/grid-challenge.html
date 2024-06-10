@@ -28,7 +28,8 @@
                 color: hsl(0deg 0% 100%);
             }
 
-            /* grid | challenge */
+            /* grid | challenge | method 1 (place in the cells) */
+            /*
             .container {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr) 18rem;
@@ -65,6 +66,46 @@
             .footer {
                 grid-column: 1 / -1;
                 block-size: 8rem;
+            }
+            */
+
+            /* grid | challenge | method 2 (naming the grind lanes) */
+            .container {
+                display: grid;
+                grid-template-rows: [header-start] 10rem [header-end box-start] 20rem [box-end main-start] 40rem [main-end footer-start] 10rem [footer-end];
+                grid-template-columns: repeat(3, [col-start] 1fr [col-end]) 20rem [grid-end];
+                gap: 2rem;
+                inline-size: 100rem;
+                margin-block: 2rem;
+                margin-inline: auto;
+            }
+
+            .container > * {
+                background-color: blueviolet;
+            }
+
+            .header {
+                grid-row: header-start / header-end;
+                grid-column: col-start 1 / grid-end;
+            }
+
+            .box {
+                grid-row: box-start / box-end;
+            }
+
+            .sidebar {
+                grid-row: box-start / main-end;
+                grid-column: col-end 3 / grid-end;
+            }
+
+            .main {
+                grid-row: main-start / main-end;
+                grid-column: col-start 1 / col-end 3;
+            }
+
+            .footer {
+                grid-row: footer-start / footer-end;
+                grid-column: col-start 1 / grid-end;
             }
         </style>
     </head>
