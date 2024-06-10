@@ -70,7 +70,7 @@
             */
 
             /* grid | challenge | method 2 (naming the grind lanes) */
-            .container {
+            /* .container {
                 display: grid;
                 grid-template-rows: [header-start] 10rem [header-end box-start] 20rem [box-end main-start] 40rem [main-end footer-start] 10rem [footer-end];
                 grid-template-columns: repeat(3, [col-start] 1fr [col-end]) 20rem [grid-end];
@@ -106,6 +106,56 @@
             .footer {
                 grid-row: footer-start / footer-end;
                 grid-column: col-start 1 / grid-end;
+            } */
+
+            /* grid | challenge | method 3 (naming the grind areas) */
+            .container {
+                display: grid;
+
+                /* '.' - dot for empty cells */
+                grid-template-areas:
+                    ". head head ."
+                    "box1 box2 box3 side"
+                    "main main main side"
+                    "foot foot foot foot";
+                grid-template-rows: 10rem 20rem 40rem 10rem;
+                gap: 2rem;
+                inline-size: 100rem;
+                margin-block: 2rem;
+                margin-inline: auto;
+            }
+
+            .container > * {
+                padding: 1rem;
+                background-color: blueviolet;
+            }
+
+            .header {
+                grid-area: head;
+            }
+
+            .box--1 {
+                grid-area: box1;
+            }
+
+            .box--2 {
+                grid-area: box2;
+            }
+
+            .box--3 {
+                grid-area: box3;
+            }
+
+            .sidebar {
+                grid-area: side;
+            }
+
+            .main {
+                grid-area: main;
+            }
+
+            .footer {
+                grid-area: foot;
             }
         </style>
     </head>
