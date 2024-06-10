@@ -5,7 +5,23 @@
     }
 
     &__content {
+        // display: flex;
+        // flex-direction: column;
+        // align-items: flex-start;
+        // justify-content: center;
+
+        display: grid;
         grid-column: col-start 5 / full-end;
+        align-content: center;
+        justify-items: start;
+        padding-block: 6rem;
+        padding-inline: 8vw;
         background-color: var(--cl-grey-light-1);
+    }
+
+    &__text {
+        margin-block-end: 4rem;
+        font-size: 1.5rem;
+        font-style: italic;
     }
 }

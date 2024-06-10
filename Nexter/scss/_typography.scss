@@ -9,10 +9,26 @@
 
 .heading-2 {
     @extend %heading;
+
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 1;
+
+    &--light {
+        color: var(--cl-grey-light-1);
+    }
+
+    &--dark {
+        color: var(--cl-grey-dark-1);
+    }
 }
 
 .heading-3 {
     @extend %heading;
+
+    font-size: 1.6rem;
+    color: var(--cl-primary);
+    text-transform: uppercase;
 }
 
 .heading-4 {
@@ -26,5 +42,24 @@
 
     &--dark {
         color: var(--cl-grey-dark-1);
+    }
+}
+
+// button
+.btn {
+    padding-block: 1.8rem;
+    padding-inline: 3rem;
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--cl-white);
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: var(--cl-primary);
+    border: none;
+    border-radius: 0;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: var(--cl-primary-dark);
     }
 }
