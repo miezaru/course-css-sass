@@ -1,7 +1,7 @@
 .header {
     display: grid;
-    grid-template-rows: 1fr min-content 6rem 1fr;
-    grid-template-columns: max-content;
+    grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+    grid-template-columns: minmax(min-content, max-content);
     grid-column: full-start / col-end 6;
     row-gap: 1.5rem;
     justify-content: center;
@@ -54,11 +54,11 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 3rem;
-        justify-items: center;
+        place-items: center center;
 
         img {
-            inline-size: auto;
-            block-size: 2.5rem;
+            max-inline-size: 100%;
+            max-block-size: 2.5rem;
             filter: brightness(70%);
         }
     }
