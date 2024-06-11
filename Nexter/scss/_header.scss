@@ -34,12 +34,32 @@
     }
 
     &__seenon-text {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        gap: 1.5rem;
+        align-items: center;
+        font-size: 1.6rem;
+        color: var(--cl-grey-light-2);
+
+        &::after,
+        &::before {
+            display: block;
+            block-size: 1px;
+            content: '';
+            background-color: currentcolor;
+        }
     }
 
     &__seenon-logos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+        justify-items: center;
+
         img {
             inline-size: auto;
             block-size: 2.5rem;
+            filter: brightness(70%);
         }
     }
 }
