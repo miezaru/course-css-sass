@@ -20,6 +20,14 @@
     background-position: center;
     background-size: cover;
 
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: full-start / full-end;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 5rem;
+    }
+
     &__logo-box {
         text-align: center;
     }

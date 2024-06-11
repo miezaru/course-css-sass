@@ -15,6 +15,12 @@
                 url('../../img/story/back.webp') type('image/webp'),
                 url('../../img/story/back.jpg')
             );
+        background-size: cover;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: full-start / full-end;
+            padding: 2rem;
+        }
     }
 
     &__img {
@@ -30,17 +36,30 @@
     &__img--2 {
         max-inline-size: 115%;
         box-shadow: var(--sh-photo-dark);
+
+        @media only screen and (max-width: $bp-medium) {
+            max-inline-size: 100%;
+        }
     }
 
     &__img-box--1 {
         grid-row: 2 / 6;
         grid-column: 2 / 6;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-row: 1 / -1;
+            grid-column: 1 / 5;
+        }
     }
 
     &__img-box--2 {
         z-index: 20;
         grid-row: 4 / 6;
         grid-column: 4 / -1;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-row: 1 / -1;
+        }
     }
 
     &__content {
@@ -56,6 +75,11 @@
         padding-block: 6rem;
         padding-inline: 8vw;
         background-color: var(--cl-grey-light-1);
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-row: 5;
+            grid-column: full-start / full-end;
+        }
     }
 
     &__text {
