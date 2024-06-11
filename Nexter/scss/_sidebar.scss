@@ -1,5 +1,37 @@
 .sidebar {
+    display: flex;
     grid-row: 1 / -1;
     grid-column: sidebar-start / sidebar-end;
+    justify-content: center;
     background-color: var(--cl-primary);
+}
+
+.nav-btn {
+    position: relative;
+    inline-size: 4.5rem;
+    block-size: 2px;
+    margin-block-start: 4rem;
+    background-color: var(--cl-white);
+    border: none;
+    border-radius: 0;
+
+    &::before,
+    &::after {
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        display: inline-block;
+        inline-size: 4.5rem;
+        block-size: 2px;
+        content: '';
+        background-color: var(--cl-white);
+    }
+
+    &::before {
+        transform: translateY(-1.5rem);
+    }
+
+    &::after {
+        transform: translateY(1.5rem);
+    }
 }
