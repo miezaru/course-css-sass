@@ -1,4 +1,45 @@
 .header {
+    display: grid;
+    grid-template-rows: 1fr min-content 6rem 1fr;
+    grid-template-columns: max-content;
     grid-column: full-start / col-end 6;
+    row-gap: 1.5rem;
+    justify-content: center;
+    padding: 8rem;
+    padding-block-start: 4rem;
     background-color: var(--cl-grey-dark-1);
+    background-image: linear-gradient(
+            var(--gr-secondary-93),
+            var(--gr-secondary-93)
+        ),
+        image-set(
+            url('../../img/hero/hero.avif') type('image/avif'),
+            url('../../img/hero/hero.webp') type('image/webp'),
+            url('../../img/hero/hero.jpeg')
+        );
+    background-position: center;
+    background-size: cover;
+
+    &__logo-box {
+        text-align: center;
+    }
+
+    &__logo {
+        inline-size: auto;
+        block-size: 3rem;
+    }
+
+    &__btn {
+        place-self: start start;
+    }
+
+    &__seenon-text {
+    }
+
+    &__seenon-logos {
+        img {
+            inline-size: auto;
+            block-size: 2.5rem;
+        }
+    }
 }
